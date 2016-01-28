@@ -1,0 +1,20 @@
+//================================================//
+// FANCY
+// these mixins are used to apply
+// fancy style to type, think dropcaps
+// pull quotes etc
+//================================================//
+
+
+@mixin dropcap {
+  @include padding-lr1;
+  @include padding-tb05;
+  @include margin-lr1;
+  @include margin-none-l;
+  @include float-left;
+  @include text-family-header;
+  @include rounded;
+  background: $light;
+  font-size: 1.125em;
+  text-transform: uppercase;
+}

@@ -1,0 +1,148 @@
+//================================================//
+// TYPOGRAPHY
+// these mixins are used to apply styles to type
+//================================================//
+
+
+//================================================//
+// ALIGNMENT
+@mixin text-center {
+  text-align: center;
+}
+@mixin text-right {
+  text-align: right;
+}
+@mixin text-justify {
+  text-align: justify;
+}
+@mixin text-center-small {
+  @media (max-width: 600px) {
+    text-align: center;
+  }
+}
+
+
+//================================================//
+// COLOR
+
+// brand colours
+@mixin text-primary{ color: $primary; }
+@mixin text-navy{ color: $navy; }
+@mixin text-midnight{ color: $midnight; }
+@mixin text-calm{ color: $calm; }
+@mixin text-cream{ color: $cream; }
+
+// base colours
+@mixin text-alert{ color: $alert; }
+@mixin text-success{ color: $success; }
+@mixin text-warning{ color: $warning; }
+@mixin text-dark{ color: $dark; }
+@mixin text-light{ color: $light; }
+@mixin text-white{ color: white; }
+@mixin text-black{ color: black; }
+
+
+//================================================//
+// SIZE
+@mixin text-smallest {
+  font-size: 0.4em;
+}
+@mixin text-smaller {
+  font-size: 0.6em;
+}
+@mixin text-small {
+  font-size: 0.8em;
+}
+@mixin text-big {
+  font-size: 1.2em;
+}
+@mixin text-bigger {
+  font-size: 1.6em;
+}
+@mixin text-biggest {
+  font-size: 2em;
+}
+
+
+//================================================//
+// FONT WEIGHT
+@mixin text-weight-100 {
+  font-weight: 100;
+}
+@mixin text-weight-200 {
+  font-weight: 200;
+}
+@mixin text-weight-300 {
+  font-weight: 300;
+}
+@mixin text-weight-400 {
+  font-weight: 400;
+}
+@mixin text-weight-500 {
+  font-weight: 500;
+}
+@mixin text-weight-600 {
+  font-weight: 600;
+}
+@mixin text-weight-700 {
+  font-weight: 700;
+}
+@mixin text-weight-800 {
+  font-weight: 800;
+}
+@mixin text-weight-900 {
+  font-weight: 900;
+}
+
+
+//================================================//
+// LETTER SPACING
+@mixin text-letterspacing-1 {
+  letter-spacing: 1px;
+}
+@mixin text-letterspacing-2 {
+  letter-spacing: 2px;
+}
+@mixin text-letterspacing-3 {
+  letter-spacing: 5px;
+}
+
+
+//================================================//
+// LISTS
+@mixin list-none {
+  padding-left: 0;
+  list-style: none;
+}
+
+
+//================================================//
+// DECORATION
+@mixin text-decoration-none {
+  text-decoration: none;
+}
+@mixin text-decoration-strike {
+  text-decoration: line-through;
+}
+@mixin text-decoration-underline {
+  text-decoration: underline;
+}
+
+//================================================//
+// TRANSFORM
+@mixin text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+
+//================================================//
+// FAMILY
+@mixin text-family-header {
+  font-family: $font-header;
+}
+@mixin text-family-default {
+  font-family: $font-default;
+}
+@mixin text-family-serif {
+  font-family: $font-serif;
+}

@@ -1,0 +1,64 @@
+//================================================//
+// BORDER
+// basic styleing for all standard form
+// and input elements
+//================================================//
+
+
+fieldset {
+  @include padding-1;
+  @include rounded;
+  border: none;
+}
+
+input, button {
+  line-height: 1.618;
+}
+
+input,textarea, select, button {
+  @include padding-05;
+  max-width: 100%;
+  font-size: 1em;
+  border-radius: $size-radius;
+  border: $size-border-width solid $calm;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type=text],
+input[type=number],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=month],
+input[type=week],
+input[type=email],
+input[type=password],
+input[type=search],
+input[type=tel],
+input[type=time],
+input[type=url],
+textarea,
+select {
+  background: $calm-300;
+  &:focus {
+    background: $calm-400;
+    border-color: $primary;
+  }
+  &:hover {
+    background: $calm-400;
+    border-color: $calm-700;
+  }
+}
+
+input[type=submit],input[type=button], button {
+  &:hover {
+    @include opacity-2;
+  }
+  &:active {
+    @include opacity-3;
+  }
+}

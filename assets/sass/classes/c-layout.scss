@@ -1,0 +1,138 @@
+//================================================//
+// LAYOUT
+// these classes are used to apply spacing and layout
+// changes to elements
+//================================================//
+
+
+//================================================//
+// FLOAT
+.float-right {
+  @include float-right;
+}
+.float-left {
+  @include float-left;
+}
+.float-none {
+  @include float-none;
+}
+
+
+//================================================//
+// POSITIONING
+.position-fixed {
+  @include position-fixed;
+}
+.position-absolute {
+  @include position-absolute;
+}
+.position-relative {
+  @include position-relative;
+}
+.position-static {
+  @include position-static;
+}
+.center-block {
+  @include center-block;
+}
+.full {
+  @include full;
+}
+
+
+//================================================//
+// MARGIN
+.margin-none {@include margin-none;}
+.margin-none-b {@include margin-none-b;}
+.margin-none-t {@include margin-none-t;}
+.margin-none-l {@include margin-none-l;}
+.margin-none-r {@include margin-none-r;}
+
+.margin-05 {@include margin-05;}
+.margin-1 {@include margin-1;}
+.margin-2 {@include margin-2;}
+.margin-3 {@include margin-3;}
+.margin-4 {@include margin-4;}
+.margin-5 {@include margin-5;}
+.margin-6 {@include margin-6;}
+
+.margin-tb05 {@include margin-tb05;}
+.margin-tb1 {@include margin-tb1;}
+.margin-tb2 {@include margin-tb2;}
+.margin-tb3 {@include margin-tb3;}
+.margin-tb4 {@include margin-tb4;}
+.margin-tb5 {@include margin-tb5;}
+.margin-tb6 {@include margin-tb6;}
+
+.margin-lr05 {@include margin-lr05;}
+.margin-lr1 {@include margin-lr1;}
+.margin-lr2 {@include margin-lr2;}
+.margin-lr3 {@include margin-lr3;}
+.margin-lr4 {@include margin-lr4;}
+.margin-lr5 {@include margin-lr5;}
+.margin-lr6 {@include margin-lr6;}
+
+.margin-t05 {@include margin-t05;}
+.margin-t1 {@include margin-t1;}
+.margin-t2 {@include margin-t2;}
+.margin-t3 {@include margin-t3;}
+.margin-t4 {@include margin-t4;}
+.margin-t5 {@include margin-t5;}
+.margin-t6 {@include margin-t6;}
+
+.margin-b05 {@include margin-b05;}
+.margin-b1 {@include margin-b1;}
+.margin-b2 {@include margin-b2;}
+.margin-b3 {@include margin-b3;}
+.margin-b4 {@include margin-b4;}
+.margin-b5 {@include margin-b5;}
+.margin-b6 {@include margin-b6;}
+
+
+//================================================//
+// PADDING
+.padding-none {@include padding-none;}
+.padding-none-b {@include padding-none-b;}
+.padding-none-t {@include padding-none-t;}
+.padding-none-l {@include padding-none-l;}
+.padding-none-r {@include padding-none-r;}
+
+.padding-05 {@include padding-05;}
+.padding-1 {@include padding-1;}
+.padding-2 {@include padding-2;}
+.padding-3 {@include padding-3;}
+.padding-4 {@include padding-4;}
+.padding-5 {@include padding-5;}
+.padding-6 {@include padding-6;}
+
+.padding-tb05 {@include padding-tb05;}
+.padding-tb1 {@include padding-tb1;}
+.padding-tb2 {@include padding-tb2;}
+.padding-tb3 {@include padding-tb3;}
+.padding-tb4 {@include padding-tb4;}
+.padding-tb5 {@include padding-tb5;}
+.padding-tb6 {@include padding-tb6;}
+
+.padding-lr05 {@include padding-lr05;}
+.padding-lr1 {@include padding-lr1;}
+.padding-lr2 {@include padding-lr2;}
+.padding-lr3 {@include padding-lr3;}
+.padding-lr4 {@include padding-lr4;}
+.padding-lr5 {@include padding-lr5;}
+.padding-lr6 {@include padding-lr6;}
+
+.padding-t05 {@include padding-t05;}
+.padding-t1 {@include padding-t1;}
+.padding-t2 {@include padding-t2;}
+.padding-t3 {@include padding-t3;}
+.padding-t4 {@include padding-t4;}
+.padding-t5 {@include padding-t5;}
+.padding-t6 {@include padding-t6;}
+
+.padding-b05 {@include padding-b05;}
+.padding-b1 {@include padding-b1;}
+.padding-b2 {@include padding-b2;}
+.padding-b3 {@include padding-b3;}
+.padding-b4 {@include padding-b4;}
+.padding-b5 {@include padding-b5;}
+.padding-b6 {@include padding-b6;}

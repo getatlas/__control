@@ -1,0 +1,110 @@
+//================================================//
+// UTILITY
+// additional classes
+//================================================//
+
+
+//================================================//
+// CORNERS
+.rounded {
+  @include rounded;
+}
+.circular {
+  @include circular;
+}
+
+
+//================================================//
+// VISBILITY
+.display-none {
+  @include display-none;
+}
+.display-inline {
+  @include display-inline;
+}
+.display-block {
+  @include display-block;
+}
+.display-initial {
+  @include display-initial;
+}
+.display-print-none {
+  @include display-print-none;
+}
+.mobile-only {
+  @include mobile-only;
+}
+.desktop-only {
+  @include desktop-only;
+}
+.tablet-up {
+  @include tablet-up;
+}
+
+
+//================================================//
+// OVERFLOW
+.overflow-hidden {
+  @include overflow-hidden;
+}
+.overflow-ellipsis {
+  @include overflow-ellipsis;
+}
+
+
+//================================================//
+// Z-INDEX
+.zindex-n10 {
+  @include zindex-n10;
+}
+.zindex-n1 {
+  @include zindex-n1;
+}
+.zindex-1 {
+  @include zindex-1;
+}
+.zindex-10 {
+  @include zindex-10;
+}
+.zindex-100 {
+  @include zindex-100;
+}
+.zindex-1000 {
+  @include zindex-1000;
+}
+
+
+//================================================//
+// OPACITY
+.opacity-full {
+  @include opacity-full;
+}
+.opacity-0 {
+  @include opacity-0;
+}
+.opacity-1 {
+  @include opacity-1;
+}
+.opacity-2 {
+  @include opacity-2;
+}
+.opacity-3 {
+  @include opacity-3;
+}
+.opacity-4 {
+  @include opacity-4;
+}
+
+
+//================================================//
+// CURSOR
+.cursor-pointer {
+  @include cursor-pointer;
+}
+
+
+//================================================//
+// SHADOWS
+.shadow-bottom {
+  @include shadow-bottom;
+}

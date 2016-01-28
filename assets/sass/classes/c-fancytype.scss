@@ -1,0 +1,11 @@
+//================================================//
+// FANCY
+// these mixins are used to apply
+// fancy style to type, think dropcaps
+// pull quotes etc
+//================================================//
+
+
+.dropcap {
+  @include dropcap;
+}

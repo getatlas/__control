@@ -1,0 +1,24 @@
+//================================================//
+// STYLEGUIDE
+
+.color-box {
+  @include margin-tb05;
+  height: 2em;
+  text-align: center;
+  border-radius: $size-radius;
+}
+
+.color-box-top {
+  height: 5em;
+  border-radius: $size-radius;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.color-box-label {
+  background-color: $light-100;
+  border-radius: $size-radius;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  text-align: center;
+}

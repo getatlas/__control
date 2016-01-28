@@ -1,0 +1,15 @@
+//================================================//
+// LABEL
+// this atom is for text styled with a background
+// color to create a label
+//================================================//
+
+
+//================================================//
+// LABELS
+.label {
+  @include padding-05;
+  @include color-tint-dark-1;
+  font-size: 0.8em;
+  border-radius: $size-radius;
+}

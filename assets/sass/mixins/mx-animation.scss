@@ -1,0 +1,139 @@
+//================================================//
+// ANIMATION
+// these classes can be toggled on and off to
+// create animations
+//================================================//
+
+
+//================================================//
+// GENEARL CLASS
+@mixin animation {
+  transition-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+
+//================================================//
+// KEYFRAME CLASSES
+@mixin pulse {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@mixin slideup {
+  animation: slideup 1s;
+  opacity: 1;
+}
+@mixin slideleft {
+  animation: slideleft 1s;
+  opacity: 1;
+}
+@mixin slideright {
+  animation: slideright 1s;
+  opacity: 1;
+}
+@mixin tossleft {
+  animation: tossleft 1s;
+  opacity: 1;
+}
+@mixin tossright {
+  animation: tossright 1s;
+  opacity: 1;
+}
+
+//================================================//
+// TRANSTITION CLASSES
+@mixin fade {
+  opacity: 1;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+@mixin fadeOut {
+  display: none;
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+}
+
+//================================================//
+// KEYFRAMES
+@keyframes pulse {
+  0% {opacity: 1;
+  display: initial;}
+  50% {opacity: 0.6;}
+  100% {opacity: 1;
+  display: initial;}
+}
+
+@keyframes slideup {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateY(0%);
+   opacity: 1;
+ }
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%);
+   opacity: 1;
+ }
+}
+
+@keyframes slideright {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%);
+   opacity: 1;
+ }
+}
+
+@keyframes tossright {
+  0% {
+    transform: translateX(-20%) rotate(4deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%) rotate(0deg);
+   opacity: 1;
+ }
+}
+
+@keyframes tossleft {
+  0% {
+    transform: translateX(20%) rotate(-4deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%) rotate(0deg);
+   opacity: 1;
+ }
+}

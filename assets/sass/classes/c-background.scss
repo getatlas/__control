@@ -1,0 +1,143 @@
+//================================================//
+// BACKGROUNDS
+// classes to add background colours to any
+// element
+//================================================//
+
+
+.color-bg-white {@include color-bg-white;}
+.color-bg-black {@include color-bg-black;}
+
+// brand colours
+.color-bg-primary {@include color-bg-primary;}
+.color-bg-navy {@include color-bg-navy;}
+.color-bg-midnight {@include color-bg-midnight;}
+.color-bg-calm {@include color-bg-calm;}
+.color-bg-cream {@include color-bg-cream;}
+
+// base
+.color-bg-alert {@include color-bg-alert;}
+.color-bg-success {@include color-bg-success;}
+.color-bg-warning {@include color-bg-warning;}
+.color-bg-dark {@include color-bg-dark;}
+.color-bg-light {@include color-bg-light;}
+
+// .color-bg-primary {@include color-bg-primary;}
+// .color-bg-primary-50 {@include color-bg-primary-50;}
+// .color-bg-primary-100 {@include color-bg-primary-100;}
+// .color-bg-primary-200 {@include color-bg-primary-200;}
+// .color-bg-primary-300 {@include color-bg-primary-300;}
+// .color-bg-primary-400 {@include color-bg-primary-400;}
+// .color-bg-primary-500 {@include color-bg-primary-500;}
+// .color-bg-primary-600 {@include color-bg-primary-600;}
+// .color-bg-primary-700 {@include color-bg-primary-700;}
+// .color-bg-primary-800 {@include color-bg-primary-800;}
+// .color-bg-primary-900 {@include color-bg-primary-900;}
+//
+// .color-bg-navy {@include color-bg-navy;}
+// .color-bg-navy-50 {@include color-bg-navy-50;}
+// .color-bg-navy-100 {@include color-bg-navy-100;}
+// .color-bg-navy-200 {@include color-bg-navy-200;}
+// .color-bg-navy-300 {@include color-bg-navy-300;}
+// .color-bg-navy-400 {@include color-bg-navy-400;}
+// .color-bg-navy-500 {@include color-bg-navy-500;}
+// .color-bg-navy-600 {@include color-bg-navy-600;}
+// .color-bg-navy-700 {@include color-bg-navy-700;}
+// .color-bg-navy-800 {@include color-bg-navy-800;}
+// .color-bg-navy-900 {@include color-bg-navy-900;}
+//
+// .color-bg-midnight {@include color-bg-midnight;}
+// .color-bg-midnight-50 {@include color-bg-midnight-50;}
+// .color-bg-midnight-100 {@include color-bg-midnight-100;}
+// .color-bg-midnight-200 {@include color-bg-midnight-200;}
+// .color-bg-midnight-300 {@include color-bg-midnight-300;}
+// .color-bg-midnight-400 {@include color-bg-midnight-400;}
+// .color-bg-midnight-500 {@include color-bg-midnight-500;}
+// .color-bg-midnight-600 {@include color-bg-midnight-600;}
+// .color-bg-midnight-700 {@include color-bg-midnight-700;}
+// .color-bg-midnight-800 {@include color-bg-midnight-800;}
+// .color-bg-midnight-900 {@include color-bg-midnight-900;}
+//
+// .color-bg-calm {@include color-bg-calm;}
+// .color-bg-calm-50 {@include color-bg-calm-50;}
+// .color-bg-calm-100 {@include color-bg-calm-100;}
+// .color-bg-calm-200 {@include color-bg-calm-200;}
+// .color-bg-calm-300 {@include color-bg-calm-300;}
+// .color-bg-calm-400 {@include color-bg-calm-400;}
+// .color-bg-calm-500 {@include color-bg-calm-500;}
+// .color-bg-calm-600 {@include color-bg-calm-600;}
+// .color-bg-calm-700 {@include color-bg-calm-700;}
+// .color-bg-calm-800 {@include color-bg-calm-800;}
+// .color-bg-calm-900 {@include color-bg-calm-900;}
+//
+// .color-bg-cream {@include color-bg-cream;}
+// .color-bg-cream-50 {@include color-bg-cream-50;}
+// .color-bg-cream-100 {@include color-bg-cream-100;}
+// .color-bg-cream-200 {@include color-bg-cream-200;}
+// .color-bg-cream-300 {@include color-bg-cream-300;}
+// .color-bg-cream-400 {@include color-bg-cream-400;}
+// .color-bg-cream-500 {@include color-bg-cream-500;}
+// .color-bg-cream-600 {@include color-bg-cream-600;}
+// .color-bg-cream-700 {@include color-bg-cream-700;}
+// .color-bg-cream-800 {@include color-bg-cream-800;}
+// .color-bg-cream-900 {@include color-bg-cream-900;}
+//
+// .color-bg-alert {@include color-bg-alert;}
+// .color-bg-alert-50 {@include color-bg-alert-50;}
+// .color-bg-alert-100 {@include color-bg-alert-100;}
+// .color-bg-alert-200 {@include color-bg-alert-200;}
+// .color-bg-alert-300 {@include color-bg-alert-300;}
+// .color-bg-alert-400 {@include color-bg-alert-400;}
+// .color-bg-alert-500 {@include color-bg-alert-500;}
+// .color-bg-alert-600 {@include color-bg-alert-600;}
+// .color-bg-alert-700 {@include color-bg-alert-700;}
+// .color-bg-alert-800 {@include color-bg-alert-800;}
+// .color-bg-alert-900 {@include color-bg-alert-900;}
+//
+// .color-bg-success {@include color-bg-success;}
+// .color-bg-success-50 {@include color-bg-success-50;}
+// .color-bg-success-100 {@include color-bg-success-100;}
+// .color-bg-success-200 {@include color-bg-success-200;}
+// .color-bg-success-300 {@include color-bg-success-300;}
+// .color-bg-success-400 {@include color-bg-success-400;}
+// .color-bg-success-500 {@include color-bg-success-500;}
+// .color-bg-success-600 {@include color-bg-success-600;}
+// .color-bg-success-700 {@include color-bg-success-700;}
+// .color-bg-success-800 {@include color-bg-success-800;}
+// .color-bg-success-900 {@include color-bg-success-900;}
+//
+// .color-bg-warning {@include color-bg-warning;}
+// .color-bg-warning-50 {@include color-bg-warning-50;}
+// .color-bg-warning-100 {@include color-bg-warning-100;}
+// .color-bg-warning-200 {@include color-bg-warning-200;}
+// .color-bg-warning-300 {@include color-bg-warning-300;}
+// .color-bg-warning-400 {@include color-bg-warning-400;}
+// .color-bg-warning-500 {@include color-bg-warning-500;}
+// .color-bg-warning-600 {@include color-bg-warning-600;}
+// .color-bg-warning-700 {@include color-bg-warning-700;}
+// .color-bg-warning-800 {@include color-bg-warning-800;}
+// .color-bg-warning-900 {@include color-bg-warning-900;}
+//
+// .color-bg-dark {@include color-bg-dark;}
+// .color-bg-dark-50 {@include color-bg-dark-50;}
+// .color-bg-dark-100 {@include color-bg-dark-100;}
+// .color-bg-dark-200 {@include color-bg-dark-200;}
+// .color-bg-dark-300 {@include color-bg-dark-300;}
+// .color-bg-dark-400 {@include color-bg-dark-400;}
+// .color-bg-dark-500 {@include color-bg-dark-500;}
+// .color-bg-dark-600 {@include color-bg-dark-600;}
+// .color-bg-dark-700 {@include color-bg-dark-700;}
+// .color-bg-dark-800 {@include color-bg-dark-800;}
+// .color-bg-dark-900 {@include color-bg-dark-900;}
+//
+// .color-bg-light {@include color-bg-light;}
+// .color-bg-light-50 {@include color-bg-light-50;}
+// .color-bg-light-100 {@include color-bg-light-100;}
+// .color-bg-light-200 {@include color-bg-light-200;}
+// .color-bg-light-300 {@include color-bg-light-300;}
+// .color-bg-light-400 {@include color-bg-light-400;}
+// .color-bg-light-500 {@include color-bg-light-500;}
+// .color-bg-light-600 {@include color-bg-light-600;}
+// .color-bg-light-700 {@include color-bg-light-700;}
+// .color-bg-light-800 {@include color-bg-light-800;}
+// .color-bg-light-900 {@include color-bg-light-900;}

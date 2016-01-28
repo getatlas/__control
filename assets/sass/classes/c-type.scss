@@ -1,0 +1,152 @@
+//================================================//
+// TYPOGRAPHY
+// these classes are used to apply styles to type
+//================================================//
+
+
+//================================================//
+// ALIGNMENT
+.text-center {
+  @include text-center;
+}
+.text-right {
+  @include text-right;
+}
+.text-justify {
+  @include text-justify;
+}
+.text-center-small {
+  @include text-center-small;
+}
+
+
+//================================================//
+// COLOR
+// brand colours
+.text-primary{ @include text-primary; }
+.text-navy{ @include text-navy; }
+.text-midnight{ @include text-midnight; }
+.text-calm{ @include text-calm; }
+.text-cream{ @include text-cream; }
+
+// base colours
+.text-alert{ @include text-alert; }
+.text-success{ @include text-success; }
+.text-warning{ @include text-warning; }
+.text-dark{ @include text-dark; }
+.text-light{ @include text-light; }
+.text-white{ @include text-white; }
+.text-black{ @include text-black; }
+
+// invert colours
+.text-invert {
+  color: $color-text-i-body;
+}
+.text-invert a {
+  color: $color-text-i-header;
+}
+
+
+//================================================//
+// SIZE
+.text-smallest {
+  @include text-smallest;
+}
+.text-smaller {
+  @include text-smaller;
+}
+.text-small {
+  @include text-small;
+}
+.text-big {
+  @include text-big;
+}
+.text-bigger {
+  @include text-bigger;
+}
+.text-biggest {
+  @include text-biggest;
+}
+
+
+//================================================//
+// FONT WEIGHT
+.text-weight-100 {
+  @include text-weight-100;
+}
+.text-weight-200 {
+  @include text-weight-200;
+}
+.text-weight-300 {
+  @include text-weight-300;
+}
+.text-weight-400 {
+  @include text-weight-400;
+}
+.text-weight-500 {
+  @include text-weight-500;
+}
+.text-weight-600 {
+  @include text-weight-600;
+}
+.text-weight-700 {
+  @include text-weight-700;
+}
+.text-weight-800 {
+  @include text-weight-800;
+}
+.text-weight-900 {
+  @include text-weight-900;
+}
+
+
+//================================================//
+// LETTER SPACING
+.text-letterspacing-1 {
+  @include text-letterspacing-1;
+}
+.text-letterspacing-2 {
+  @include text-letterspacing-2;
+}
+.text-letterspacing-3 {
+  @include text-letterspacing-3;
+}
+
+
+//================================================//
+// LISTS
+.list-none {
+  @include list-none;
+}
+
+
+//================================================//
+// DECORATION
+.text-decoration-none {
+  @include text-decoration-none;
+}
+.text-decoration-strike {
+  @include text-decoration-strike
+}
+.text-decoration-underline {
+  @include text-decoration-underline
+}
+
+//================================================//
+// TRANSFORM
+.text-transform-uppercase {
+  @include text-transform-uppercase;
+}
+
+
+//================================================//
+// FAMILY
+.text-family-header {
+  @include text-family-header;
+}
+.text-family-default {
+  @include text-family-default;
+}
+.text-family-serif {
+  @include text-family-serif;
+}

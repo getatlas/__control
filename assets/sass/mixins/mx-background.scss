@@ -1,0 +1,164 @@
+//================================================//
+// BACKGROUNDS
+// mixins to add background colours to any
+// element
+//================================================//
+
+
+@mixin color-bg-white {background: white;}
+@mixin color-bg-black {background: black;}
+
+// brand colours
+@mixin color-bg-primary {
+  background: $primary;
+  border-color: $primary;
+}
+@mixin color-bg-navy {
+  background: $navy;
+  border-color: $navy;
+}
+@mixin color-bg-midnight {
+  background: $midnight;
+  border-color: $midnight;
+}
+@mixin color-bg-calm {
+  background: $calm;
+  border-color: $calm;
+}
+@mixin color-bg-cream {
+  background: $cream;
+  border-color: $cream;
+}
+
+// base
+@mixin color-bg-alert {
+  background: $alert;
+  border-color: $alert;
+}
+@mixin color-bg-success {
+  background: $success;
+  border-color: $success;
+}
+@mixin color-bg-warning {
+  background: $warning;
+  border-color: $warning;
+}
+@mixin color-bg-dark {
+  background: $dark;
+  border-color: $dark;
+}
+@mixin color-bg-light {
+  background: $light;
+  border-color: $light;
+}
+
+
+@mixin color-bg-primary-50 {background: $primary-100;}
+@mixin color-bg-primary-100 {background: $primary-100;}
+@mixin color-bg-primary-200 {background: $primary-200;}
+@mixin color-bg-primary-300 {background: $primary-300;}
+@mixin color-bg-primary-400 {background: $primary-400;}
+@mixin color-bg-primary-500 {background: $primary-500;}
+@mixin color-bg-primary-600 {background: $primary-600;}
+@mixin color-bg-primary-700 {background: $primary-700;}
+@mixin color-bg-primary-800 {background: $primary-800;}
+@mixin color-bg-primary-900 {background: $primary-900;}
+
+@mixin color-bg-navy-50 {background: $navy-100;}
+@mixin color-bg-navy-100 {background: $navy-100;}
+@mixin color-bg-navy-200 {background: $navy-200;}
+@mixin color-bg-navy-300 {background: $navy-300;}
+@mixin color-bg-navy-400 {background: $navy-400;}
+@mixin color-bg-navy-500 {background: $navy-500;}
+@mixin color-bg-navy-600 {background: $navy-600;}
+@mixin color-bg-navy-700 {background: $navy-700;}
+@mixin color-bg-navy-800 {background: $navy-800;}
+@mixin color-bg-navy-900 {background: $navy-900;}
+
+@mixin color-bg-midnight-50 {background: $midnight-100;}
+@mixin color-bg-midnight-100 {background: $midnight-100;}
+@mixin color-bg-midnight-200 {background: $midnight-200;}
+@mixin color-bg-midnight-300 {background: $midnight-300;}
+@mixin color-bg-midnight-400 {background: $midnight-400;}
+@mixin color-bg-midnight-500 {background: $midnight-500;}
+@mixin color-bg-midnight-600 {background: $midnight-600;}
+@mixin color-bg-midnight-700 {background: $midnight-700;}
+@mixin color-bg-midnight-800 {background: $midnight-800;}
+@mixin color-bg-midnight-900 {background: $midnight-900;}
+
+@mixin color-bg-calm-50 {background: $calm-100;}
+@mixin color-bg-calm-100 {background: $calm-100;}
+@mixin color-bg-calm-200 {background: $calm-200;}
+@mixin color-bg-calm-300 {background: $calm-300;}
+@mixin color-bg-calm-400 {background: $calm-400;}
+@mixin color-bg-calm-500 {background: $calm-500;}
+@mixin color-bg-calm-600 {background: $calm-600;}
+@mixin color-bg-calm-700 {background: $calm-700;}
+@mixin color-bg-calm-800 {background: $calm-800;}
+@mixin color-bg-calm-900 {background: $calm-900;}
+
+@mixin color-bg-cream-50 {background: $cream-100;}
+@mixin color-bg-cream-100 {background: $cream-100;}
+@mixin color-bg-cream-200 {background: $cream-200;}
+@mixin color-bg-cream-300 {background: $cream-300;}
+@mixin color-bg-cream-400 {background: $cream-400;}
+@mixin color-bg-cream-500 {background: $cream-500;}
+@mixin color-bg-cream-600 {background: $cream-600;}
+@mixin color-bg-cream-700 {background: $cream-700;}
+@mixin color-bg-cream-800 {background: $cream-800;}
+@mixin color-bg-cream-900 {background: $cream-900;}
+
+@mixin color-bg-alert-50 {background: $alert-100;}
+@mixin color-bg-alert-100 {background: $alert-100;}
+@mixin color-bg-alert-200 {background: $alert-200;}
+@mixin color-bg-alert-300 {background: $alert-300;}
+@mixin color-bg-alert-400 {background: $alert-400;}
+@mixin color-bg-alert-500 {background: $alert-500;}
+@mixin color-bg-alert-600 {background: $alert-600;}
+@mixin color-bg-alert-700 {background: $alert-700;}
+@mixin color-bg-alert-800 {background: $alert-800;}
+@mixin color-bg-alert-900 {background: $alert-900;}
+
+@mixin color-bg-success-50 {background: $success-100;}
+@mixin color-bg-success-100 {background: $success-100;}
+@mixin color-bg-success-200 {background: $success-200;}
+@mixin color-bg-success-300 {background: $success-300;}
+@mixin color-bg-success-400 {background: $success-400;}
+@mixin color-bg-success-500 {background: $success-500;}
+@mixin color-bg-success-600 {background: $success-600;}
+@mixin color-bg-success-700 {background: $success-700;}
+@mixin color-bg-success-800 {background: $success-800;}
+@mixin color-bg-success-900 {background: $success-900;}
+
+@mixin color-bg-warning-50 {background: $warning-100;}
+@mixin color-bg-warning-100 {background: $warning-100;}
+@mixin color-bg-warning-200 {background: $warning-200;}
+@mixin color-bg-warning-300 {background: $warning-300;}
+@mixin color-bg-warning-400 {background: $warning-400;}
+@mixin color-bg-warning-500 {background: $warning-500;}
+@mixin color-bg-warning-600 {background: $warning-600;}
+@mixin color-bg-warning-700 {background: $warning-700;}
+@mixin color-bg-warning-800 {background: $warning-800;}
+@mixin color-bg-warning-900 {background: $warning-900;}
+
+@mixin color-bg-dark-50 {background: $dark-100;}
+@mixin color-bg-dark-100 {background: $dark-100;}
+@mixin color-bg-dark-200 {background: $dark-200;}
+@mixin color-bg-dark-300 {background: $dark-300;}
+@mixin color-bg-dark-400 {background: $dark-400;}
+@mixin color-bg-dark-500 {background: $dark-500;}
+@mixin color-bg-dark-600 {background: $dark-600;}
+@mixin color-bg-dark-700 {background: $dark-700;}
+@mixin color-bg-dark-800 {background: $dark-800;}
+@mixin color-bg-dark-900 {background: $dark-900;}
+
+@mixin color-bg-light-50 {background: $light-50;}
+@mixin color-bg-light-100 {background: $light-100;}
+@mixin color-bg-light-200 {background: $light-200;}
+@mixin color-bg-light-300 {background: $light-300;}
+@mixin color-bg-light-400 {background: $light-400;}
+@mixin color-bg-light-500 {background: $light-500;}
+@mixin color-bg-light-600 {background: $light-600;}
+@mixin color-bg-light-700 {background: $light-700;}
+@mixin color-bg-light-800 {background: $light-800;}
+@mixin color-bg-light-900 {background: $light-900;}

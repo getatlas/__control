@@ -1,0 +1,152 @@
+//================================================//
+// basic styleing for all standard typographic
+// elements
+//================================================//
+
+body {
+  font-family: $font-default;
+  font-size: $size-base-mobile;
+  line-height: $size-lineheight-body;
+  color: $color-text-body;
+  word-wrap: break-word;
+  @media (min-width: 500px) {
+    font-size: $size-base-tablet;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-base-desktop;
+  }
+}
+
+p, li, blockquote, pre, input, a {
+  line-height: $size-lineheight-body;
+}
+
+a {
+  color: $primary;
+  &:hover {
+    @include opacity-3;
+  }
+  &:active {
+    @include opacity-4;
+  }
+}
+
+::selection {
+  background: $primary;
+  color: $color-text-i-body;
+}
+::-moz-selection {
+  background: $primary;
+  color: $color-text-i-body;
+}
+
+
+//================================================//
+// headers
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-header;
+  line-height: $size-lineheight-header;
+}
+h1, h2, h3 {
+  color: $color-text-header;
+}
+h2 {
+  @include opacity-1;
+}
+h3, h4 {
+  @include opacity-1;
+}
+h5, h6 {
+  @include opacity-2;
+}
+
+h1 {
+  font-size:  $size-mobile-h1;
+  @media (min-width: 500px) {
+    font-size: $size-tablet-h1;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-desktop-h1;
+  }
+}
+
+
+h2 {
+  font-size:  $size-mobile-h2;
+  @media (min-width: 500px) {
+    font-size: $size-tablet-h2;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-desktop-h2;
+  }
+}
+
+
+h3 {
+  font-size:  $size-mobile-h3;
+  @media (min-width: 500px) {
+    font-size: $size-tablet-h3;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-desktop-h3;
+  }
+}
+
+
+h4 {
+  font-size:  $size-mobile-h4;
+  @media (min-width: 500px) {
+    font-size: $size-tablet-h4;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-desktop-h4;
+  }
+}
+
+
+h5 {
+  font-size:  $size-mobile-h5;
+  @media (min-width: 500px) {
+    font-size: $size-tablet-h5;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-desktop-h5;
+  }
+}
+
+
+h6 {
+  font-size:  $size-mobile-h6;
+  @media (min-width: 500px) {
+    font-size: $size-tablet-h6;
+  }
+  @media (min-width: 900px) {
+    font-size: $size-desktop-h6;
+  }
+}
+
+
+//================================================//
+// additional elements
+blockquote {
+  @include margin-none-l;
+  @include padding-1;
+  border-left: solid 5px $light;
+  cite {
+    @include opacity-2;
+  }
+}
+
+dd {
+  margin-left: 0;
+}
+
+kbd {
+  padding: 4px;
+  white-space:nowrap;
+  font-size: 0.8em;
+  border-radius: $size-radius;
+  border: 1px solid $light-600;
+  background: $light;
+  box-shadow:0 2px 0px $light-600,0 0 0 3px rgba(255, 255, 255, 0.6) inset;
+}

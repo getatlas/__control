@@ -1,0 +1,25 @@
+//================================================//
+// HEADROOM
+// classess avaliable to create animated top bar
+// animations using headroom.js
+//================================================//
+
+
+nav.headroom {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  z-index: 10;
+  transition: transform 200ms linear;
+}
+
+.headroom--unpinned {
+  display: initial !important;
+  transform: translateY(-100%);
+}
+
+.headroom--pinned {
+  display: initial !important;
+  transform: translateY(0%);
+}

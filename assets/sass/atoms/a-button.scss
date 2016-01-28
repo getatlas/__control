@@ -1,0 +1,23 @@
+//================================================//
+// BUTTON
+// use these classes to create buttons
+//================================================//
+
+
+.button {
+  @include padding-1;
+  display: inline-block;
+  text-decoration: none;
+  white-space: pre;
+  cursor: pointer;
+  &:hover {
+    @include opacity-1;
+  }
+  &:active {
+    @include opacity-2;
+  }
+}
+.button-small {
+  @extend .button;
+  @include padding-05;
+}
