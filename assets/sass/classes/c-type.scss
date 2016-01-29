@@ -45,6 +45,15 @@
 .text-invert a {
   color: $color-text-i-header;
 }
+.text-invert h1,
+.text-invert h2,
+.text-invert h3,
+.text-invert h4,
+.text-invert h5,
+.text-invert h6,
+ {
+  color: $color-text-i-header;
+}
 
 
 //================================================//
