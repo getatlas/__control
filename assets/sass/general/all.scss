@@ -2,3 +2,58 @@
 // TEMPORARY
 // code in here should be split into molecules
 //================================================//
+
+
+//================================================//
+// NAVIGATION
+.nav-fullpage {
+  position: fixed;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(-100%);
+  transition-property: transform;
+  transition-duration: 0.4s;
+  overflow-x: hidden;
+}
+
+.nav-fullpage-visible {
+  opacity:1;
+  transform: translateY(0);
+}
+
+.sidebar {
+  width: 128px;
+  height: 100%;
+}
+
+main {
+  @media (min-width: 900px) {
+    margin-left: 128px;
+  }
+}
+
+.input-clear {
+  background: none !important;
+  &:hover {
+    background: none !important;
+  }
+}
+
+.item-active {
+  @include color-tint-primary-1;
+}
+
+//================================================//
+// OTHER STUFF
+.item-hover-dark:hover {
+  @include color-tint-dark-1;
+}
+
+.item-hover-light:hover {
+  @include color-tint-light-2;
+}
+
+.max-width-none {
+  max-width: none;
+}

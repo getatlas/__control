@@ -40,7 +40,9 @@
 .tablet-up {
   @include tablet-up;
 }
-
+.tablet-down {
+  @include tablet-down;
+}
 
 //================================================//
 // OVERFLOW
