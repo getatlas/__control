@@ -23,14 +23,33 @@
 }
 
 .sidebar {
-  width: 128px;
+  width: 80px;
   height: 100%;
+  transition: width 0.2s;
+  transition-timing-function: cubic-bezier(.4,.14,.33,.83);
+  &:hover {
+    width: 200px;
+    .hover-show {
+      display: inline-block;;
+    }
+  }
+  li {
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
 
 main {
+  transition: margin 0.2s;
+  transition-timing-function: cubic-bezier(.4,.14,.33,.83);
   @media (min-width: 900px) {
-    margin-left: 128px;
+    background-color: blue;
+    margin-left: 80px;
   }
+}
+
+.sidebar:hover + main {
+  margin-left: 200px;
 }
 
 .input-clear {
@@ -46,14 +65,6 @@ main {
 
 //================================================//
 // OTHER STUFF
-.item-hover-dark:hover {
-  @include color-tint-dark-1;
-}
-
-.item-hover-light:hover {
-  @include color-tint-light-2;
-}
-
 .max-width-none {
   max-width: none;
 }

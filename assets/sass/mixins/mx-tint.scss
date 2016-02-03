@@ -6,16 +6,16 @@
 
 
 @mixin color-tint-dark-1 {
-  background: transparentize($midnight, 0.9);
+  background: transparentize($dark, 0.9);
 }
 @mixin color-tint-dark-2 {
-  background: transparentize($midnight, 0.7);
+  background: transparentize($dark, 0.7);
 }
 @mixin color-tint-dark-3 {
-  background: transparentize($midnight, 0.5);
+  background: transparentize($dark, 0.5);
 }
 @mixin color-tint-dark-4 {
-  background: transparentize($midnight, 0.3);
+  background: transparentize($dark, 0.3);
 }
 
 @mixin color-tint-light-1 {

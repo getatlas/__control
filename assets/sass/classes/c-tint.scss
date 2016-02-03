@@ -5,6 +5,50 @@
 //================================================//
 
 
+//================================================//
+// HOVER
+.hover-color-tint-dark-1:hover {
+  @include color-tint-dark-1;
+}
+.hover-color-tint-dark-2:hover {
+  @include color-tint-dark-2;
+}
+.hover-color-tint-dark-3:hover {
+  @include color-tint-dark-3;
+}
+.hover-color-tint-dark-4:hover {
+  @include color-tint-dark-4;
+}
+
+.hover-color-tint-light-1:hover {
+  @include color-tint-light-1;
+}
+.hover-color-tint-light-2:hover {
+  @include color-tint-light-2;
+}
+.hover-color-tint-light-3:hover {
+  @include color-tint-light-3;
+}
+.hover-color-tint-light-4:hover {
+  @include color-tint-light-4;
+}
+
+.hover-color-tint-primary-1:hover {
+  @include color-tint-primary-1;
+}
+.hover-color-tint-primary-2:hover {
+  @include color-tint-primary-2;
+}
+.hover-color-tint-primary-3:hover {
+  @include color-tint-primary-3;
+}
+.hover-color-tint-primary-4:hover {
+  @include color-tint-primary-4;
+}
+
+
+//================================================//
+// TINT
 .color-tint-dark-1 {
   @include color-tint-dark-1;
 }
