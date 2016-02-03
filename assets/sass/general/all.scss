@@ -6,14 +6,15 @@
 
 //================================================//
 // NAVIGATION
+// mobile pull down
 .nav-fullpage {
   position: fixed;
   left: 0;
   height: 100%;
   width: 100%;
   transform: translateY(-100%);
-  transition-property: transform;
-  transition-duration: 0.4s;
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(.83,.11,.19,.68);
   overflow-x: hidden;
 }
 
@@ -22,15 +23,34 @@
   transform: translateY(0);
 }
 
+// sidebar
+.hover-show {
+  display: none;
+}
+@keyframes slide-in {
+  0%   {
+    display: inline-block;
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    display: inline-block;
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
 .sidebar {
   width: 80px;
   height: 100%;
   transition: width 0.2s;
-  transition-timing-function: cubic-bezier(.4,.14,.33,.83);
+  transition-timing-function: cubic-bezier(.83,.11,.19,.68);
   &:hover {
     width: 200px;
     .hover-show {
-      display: inline-block;;
+      display: inline-block;
+      animation: slide-in 0.2s;
+      animation-fill-mode: forwards;
     }
   }
   li {
@@ -38,9 +58,10 @@
     overflow: hidden;
   }
 }
+
 main, .topbar {
   transition: margin 0.2s;
-  transition-timing-function: cubic-bezier(.4,.14,.33,.83);
+  transition-timing-function: cubic-bezier(.83,.11,.19,.68);
   @media (min-width: 900px) {
     margin-left: 80px;
   }
@@ -54,6 +75,7 @@ main, .topbar {
   @include color-tint-primary-1;
   box-shadow: -10px 1px 0px -1px $primary inset;
 }
+
 
 //================================================//
 // OTHER STUFF
