@@ -24,10 +24,10 @@ p, li, blockquote, pre, input, a {
 a {
   color: $primary;
   &:hover {
-    @include opacity-3;
+    @include opacity-1;
   }
   &:active {
-    @include opacity-4;
+    @include opacity-2;
   }
 }
 

@@ -38,12 +38,22 @@
    background-image: url('/../assets/img/atlas-mark-guide.png');
 }
 
-.logo-hover {
+
+.mark-circular-hover {
   @extend .mark-hover;
-  background-image: url('/../assets/img/atlas-logo.png');
+  background-image: url('/../assets/img/atlas-mark-circular.png');
+}
+
+.mark-circular-hover:hover {
+   background-image: url('/../assets/img/atlas-mark-circular-guide.png');
+}
+
+.logotype-hover {
+  @extend .mark-hover;
+  background-image: url('/../assets/img/atlas-logotype.png');
   height: 200px;
 }
 
-.logo-hover:hover {
-   background-image: url('/../assets/img/atlas-logo-guide.png');
+.logotype-hover:hover {
+   background-image: url('/../assets/img/atlas-logotype-guide.png');
 }

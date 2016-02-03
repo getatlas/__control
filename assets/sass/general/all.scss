@@ -29,12 +29,10 @@
 }
 @keyframes slide-in {
   0%   {
-    display: inline-block;
     transform: translateX(50%);
     opacity: 0;
   }
   100% {
-    display: inline-block;
     transform: translateX(0%);
     opacity: 1;
   }
@@ -56,6 +54,9 @@
   li {
     white-space: nowrap;
     overflow: hidden;
+  }
+  .logo {
+    height: 1.5em;
   }
 }
 
