@@ -8,7 +8,7 @@
 //================================================//
 // GENEARL CLASS
 @mixin animation {
-  transition-timing-function: ease-in;
+  transition-timing-function: cubic-bezier(.4,.14,.33,.83);
   animation-fill-mode: both;
 }
 
@@ -24,22 +24,7 @@
   animation: slideup 1s;
   opacity: 1;
 }
-@mixin slideleft {
-  animation: slideleft 1s;
-  opacity: 1;
-}
-@mixin slideright {
-  animation: slideright 1s;
-  opacity: 1;
-}
-@mixin tossleft {
-  animation: tossleft 1s;
-  opacity: 1;
-}
-@mixin tossright {
-  animation: tossright 1s;
-  opacity: 1;
-}
+
 
 //================================================//
 // TRANSTITION CLASSES
@@ -50,13 +35,6 @@
   -webkit-transition: opacity .5s ease-in-out;
 }
 
-@mixin fadeOut {
-  display: none;
-  opacity: 0;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
-}
 
 //================================================//
 // KEYFRAMES
@@ -78,62 +56,6 @@
   }
  100% {
    transform: translateY(0%);
-   opacity: 1;
- }
-}
-
-@keyframes slideleft {
-  0% {
-    transform: translateX(20%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
- 100% {
-   transform: translateX(0%);
-   opacity: 1;
- }
-}
-
-@keyframes slideright {
-  0% {
-    transform: translateX(-20%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
- 100% {
-   transform: translateX(0%);
-   opacity: 1;
- }
-}
-
-@keyframes tossright {
-  0% {
-    transform: translateX(-20%) rotate(4deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
- 100% {
-   transform: translateX(0%) rotate(0deg);
-   opacity: 1;
- }
-}
-
-@keyframes tossleft {
-  0% {
-    transform: translateX(20%) rotate(-4deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
- 100% {
-   transform: translateX(0%) rotate(0deg);
    opacity: 1;
  }
 }

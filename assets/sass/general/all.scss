@@ -38,29 +38,21 @@
     overflow: hidden;
   }
 }
-
-main {
+main, .topbar {
   transition: margin 0.2s;
   transition-timing-function: cubic-bezier(.4,.14,.33,.83);
   @media (min-width: 900px) {
-    background-color: blue;
     margin-left: 80px;
   }
 }
 
-.sidebar:hover + main {
+.sidebar:hover + .topbar {
   margin-left: 200px;
-}
-
-.input-clear {
-  background: none !important;
-  &:hover {
-    background: none !important;
-  }
 }
 
 .item-active {
   @include color-tint-primary-1;
+  box-shadow: -10px 1px 0px -1px $primary inset;
 }
 
 //================================================//
