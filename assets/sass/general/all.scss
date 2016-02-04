@@ -27,36 +27,37 @@
 .hover-show {
   display: none;
 }
-@keyframes slide-in {
-  0%   {
-    transform: translateX(50%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
 
 .sidebar {
   width: 80px;
   height: 100%;
   transition: width 0.2s;
   transition-timing-function: cubic-bezier(.83,.11,.19,.68);
+  img {
+    max-width: none;
+  }
   &:hover {
     width: 200px;
     .hover-show {
       display: inline-block;
-      animation: slide-in 0.2s;
+      animation: slide-in-r 0.2s;
       animation-fill-mode: forwards;
+    }
+    .logoend {
+      @extend .hover-show;
+      animation: slide-in-l 0.6s;
+    }
+    .logo {
+      @extend .hover-show;
+      animation: slide-in-r2 0.4s;
     }
   }
   li {
     white-space: nowrap;
     overflow: hidden;
   }
-  .logo {
-    height: 1.5em;
+  .logo, .logoend {
+    height: 1em;
   }
 }
 
@@ -77,6 +78,40 @@ main, .topbar {
   box-shadow: -10px 1px 0px -1px $primary inset;
 }
 
+// keyframes
+@keyframes slide-in-r {
+  0%   {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-l {
+  0%   {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  5%   {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-r2 {
+  0%   {
+    transform: translateX(65%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
 
 //================================================//
 // OTHER STUFF
