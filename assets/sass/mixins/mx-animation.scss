@@ -8,7 +8,7 @@
 //================================================//
 // GENEARL CLASS
 @mixin animation {
-  transition-timing-function: cubic-bezier(.4,.14,.33,.83);
+  transition-timing-function: cubic-bezier(.8,.43,0,.48);
   animation-fill-mode: both;
 }
 
@@ -16,37 +16,48 @@
 //================================================//
 // KEYFRAME CLASSES
 @mixin pulse {
-  animation-name: pulse;
-  animation-duration: 1.5s;
+  animation: pulse 1.5s;
   animation-iteration-count: infinite;
 }
-@mixin slideup {
-  animation: slideup 1s;
-  opacity: 1;
+@mixin slide-up {
+  animation: slide-up 1s;
 }
-
+@mixin slide-left {
+  animation: slide-left 1s;
+}
+@mixin slide-right {
+  animation: slide-right 1s;
+}
+@mixin toss-left {
+  animation: toss-left 1s;
+}
+@mixin toss-right {
+  animation: toss-right 1s;
+}
 
 //================================================//
 // TRANSTITION CLASSES
 @mixin fade {
   opacity: 1;
-  transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s cubic-bezier(.8,.43,0,.48);
 }
 
+@mixin fade-out {
+  opacity: 0;
+  transition: opacity .5s cubic-bezier(.8,.43,0,.48);
+}
 
 //================================================//
 // KEYFRAMES
 @keyframes pulse {
   0% {opacity: 1;
   display: initial;}
-  50% {opacity: 0.6;}
+  50% {opacity: 0.5;}
   100% {opacity: 1;
   display: initial;}
 }
 
-@keyframes slideup {
+@keyframes slide-up {
   0% {
     transform: translateY(20px);
     opacity: 0;
@@ -56,6 +67,62 @@
   }
  100% {
    transform: translateY(0%);
+   opacity: 1;
+ }
+}
+
+@keyframes slide-left {
+  0% {
+    transform: translateX(20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%);
+   opacity: 1;
+ }
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translateX(-20%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%);
+   opacity: 1;
+ }
+}
+
+@keyframes toss-right {
+  0% {
+    transform: translateX(-20%) rotate(4deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%) rotate(0deg);
+   opacity: 1;
+ }
+}
+
+@keyframes toss-left {
+  0% {
+    transform: translateX(20%) rotate(-4deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+ 100% {
+   transform: translateX(0%) rotate(0deg);
    opacity: 1;
  }
 }

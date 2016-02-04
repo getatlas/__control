@@ -1,38 +1,89 @@
 ---
 layout: default
+title: Styleguide
+description: Styleguide Used To Start Web Design Projects
+social-headline: Styleguide
 ---
 
 <!-- INTRO -->
 <!-- ............................ -->
 <section>
+
   <!-- intro -->
   <div class="row">
     <div class="large-4 columns">
-      <h3>Intro</h3>
+      <h3>Gettings Started</h3>
     </div>
     <div class="large-8 columns">
+      <p class="text-big">
+        This styleguide is used to define elements and styles for the Atlas brand.
+      </p>
       <p>
-        This styleguide is used to define elements and styles for the Atlas brand across their website.
+        Grids and columns can be created using existing Foundation classes. Please refer to their <a href="http://foundation.zurb.com/sites/docs/" target="_blank">documentation</a> for examples and usage instructions.
+      </p>
+      <p>
+        <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> is used to reuse duplicated HTML. Use <code class="label">jekyll serve</code> to generate outputted site to the <code class="label">_site</code> directory.
+      </p>
+      <p>
+        To compile Sass, <code class="label">cd</code> to the <code class="label">assets</code> directory then use <code class="label">gulp watch</code>.
       </p>
     </div>
   </div>
   <hr class="opacity-4"/>
-  <!-- contents -->
+
+  <!-- directory structure -->
   <div class="row">
     <div class="large-4 columns">
-      <h3>Contents</h3>
+      <h3>Directory Structure</h3>
     </div>
     <div class="large-8 columns">
-      <ul>
-        <li>Branding</li>
-        <li>Basic Text Elements</li>
-        <li>Basic Form Elements</li>
-        <li>Additional Text Classes</li>
-        <li>Utility Classes</li>
-      </ul>
+      <p>
+        <a href="http://sass-lang.com/" target="_blank">Sass</a> is used for this project to create modular code that is sustainable and reusable. The Sass follows <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a> principles. The directory structure is designed around this concept.
+      </p>
+      <p>
+        Inside the Sass folder you will find <code class="label">style.scss</code>. This file is responsible for importing all the necessary styles. Open up this file and recompile the compressed css if you find some components are not necessary.
+      </p>
+      <p>
+        The <code class="label">variables</code> folder contains variables to setup the project. All files are prefixed with <code>v-</code>.
+      </p>
+      <p>
+        The <code class="label">framework</code> folder contains outside code that has be repurposed for this project. These include css frameworks, font libraries and other css plugins.
+      </p>
+      <p>
+        The <code class="label">mixins</code> folder contains mixins that are used throughout the Sass folder. All files are prefixed with <code>mx-</code>.
+      </p>
+      <p>
+        The <code class="label">general</code> folder contains styles that are applied directly to bare html elements.
+      </p>
+      <p>
+        The <code class="label">classes</code> folder contains classes used to modify and style elements by adding classes. All files are prefixed with <code>c-</code>.
+      </p>
+      <p>
+        The <code class="label">atoms</code> folder contains styles used to create single elements such as buttons. All files are prefixed with <code>a-</code>.
+      </p>
+      <p>
+        The <code class="label">molecules</code> folder contains styles used to create components with multiple elements such as a sidebar navigation. All files are prefixed with <code>ml-</code>.
+      </p>
     </div>
   </div>
   <hr class="opacity-4"/>
+
+  <!-- optimizations -->
+  <div class="row">
+    <div class="large-4 columns">
+      <h3>Optimizations</h3>
+    </div>
+    <div class="large-8 columns">
+      <p>
+        In order to optimize the final outputted css all unused code should be commented out in the <code class="label">style.scss</code> file.
+      </p>
+      <p>
+        Icon libraries that are used can significantly increase the final file size. It is important to only include the specific icons used.
+      </p>
+    </div>
+  </div>
+  <hr class="opacity-4"/>
+
   <!-- structure -->
   <div class="row">
     <div class="large-4 columns">
@@ -40,11 +91,22 @@ layout: default
     </div>
     <div class="large-8 columns">
       <p>
-        main role="main" > article > section
+        Use the following elements to structure content.
+        <code class="label">main</code>,<code class="label">article</code>,<code class="label">section</code>
+      </p>
+      <p>
+        The <code class="label">main</code>. element should contain the main content for your web page. All of this content should be unique to the individual page, and should not appear elsewhere on the site.
+      </p>
+      <p>
+        The <code class="label">article</code> element should contain a piece of self-contained content that could be distributed outside the context of the page. This includes things like news articles, blog posts, or user comments.
+      </p>
+      <p>
+        The <code class="label">section</code> element should contain related content. Think of it like this... the article element is a news article, and the section is a section inside that article.
       </p>
     </div>
   </div>
   <hr class="opacity-4"/>
+
 </section>
 
 <!-- BRANDING -->
@@ -56,13 +118,12 @@ layout: default
     <div class="large-4 columns">
       <h3>Logos</h3>
       <p>
-        Please use the required white space of at least 1/4 of the "A" width. Alternatively 3/8 whitespace is required when logomark is inside a circular inclosure.
+        Please use the required white space of at least 1/4 of the "A" height. Alternatively 3/8 whitespace is required when logomark is inside a circular inclosure.
       </p>
     </div>
     <div class="large-8 columns">
       <h4>Logomark</h4>
       <div class="mark-hover"></div>
-      <div class="mark-circular-hover"></div>
       <h4>Logotype</h4>
       <div class="logotype-hover"></div>
     </div>
@@ -73,7 +134,7 @@ layout: default
   <div class="row">
     <div class="large-4 columns">
       <h3>Colors</h3>
-      <p>Background colors can be used on any element using <code class="label">.color-bg-<i>color</i></code>.
+      <p>Background colors can be used on any element using <code class="label">.color-bg-<i>[color]</i></code>.
     </div>
     <div class="large-8 columns">
       <h4>Primary Colors</h4>
@@ -449,7 +510,7 @@ layout: default
       <h3>Lists</h3>
       <p>
         By default lists can be numbered or simply plain bullet points. Use
-        <code class="label">ui</code> for an unordered list and <code class="label">ol</code> for a ordered list. A class of <code>list-none</code> can be added to remove any bullet points.
+        <code class="label">ui</code> for an unordered list and <code class="label">ol</code> for a ordered list. A class of <code class="label">list-none</code> can be added to remove any bullet points.
       </p>
     </div>
     <div class="large-8 columns">
@@ -477,7 +538,7 @@ layout: default
     <div class="large-4 columns">
       <h3>Tables</h3>
       <p>
-        Use tables to display data
+        Use tables to display data. Tables can be styled in a number of ways, use this example as a starting point.
       </p>
     </div>
     <div class="large-8 columns">
@@ -730,13 +791,13 @@ layout: default
   </div>
   <hr class="opacity-4"/>
 
-  <!-- input -->
+  <!-- mask -->
   <div class="row">
     <div class="large-4 columns">
       <h3>Masking Form Inputs</h3>
       <p>
-        Input elements can include a masks to guide users in the right direction. The jQuery Mask Plugin is used for this.
-        <code class="text-small">
+        Input elements can include a masks to guide users in the right direction. The jQuery Mask Plugin is used for this. JQuery and the <code>jquery.mask.min.js</code> files are required.<br/>
+        <code class="text-smaller">
           $( document ).ready(function() {
             $('.mask-date').mask('00/00/0000');
             $('.mask-phonenumber').mask('(000) 000-0000');
@@ -781,7 +842,7 @@ layout: default
     <div class="large-4 columns">
       <h3>Alignment</h3>
       <p>
-        By default text is aligned to the left. Use <code class="label">.text-<i>direction</i></code> to change this on any element.
+        By default text is aligned to the left. Use <code class="label">.text-<i>[direction]</i></code> to change this on any element.
       </p>
     </div>
     <div class="large-8 columns">
@@ -807,7 +868,7 @@ layout: default
   <div class="row">
     <div class="large-4 columns">
       <h3>Sizing</h3>
-      <p>Additonal classes can be used to resize paragraphs and other elements. Use <code class="label">.text-<i>size</i></code> to change this on any element.
+      <p>Additonal classes can be used to resize paragraphs and other elements. Use <code class="label">.text-<i>[size]</i></code> to change this on any element.
     </div>
     <div class="large-8 columns">
       <code class="label">.text-smallest</code><br/>
@@ -843,13 +904,12 @@ layout: default
   </div>
   <hr class="opacity-4"/>
 
-
   <!-- text color -->
   <div class="row">
     <div class="large-4 columns">
       <h3>Text Color</h3>
       <p>
-        Change color of text using the following classes. Use <code class="label">.text-<i>color</i></code> to change text color on any element.
+        Change color of text using the following classes. Use <code class="label">.text-<i>[color]</i></code> to change text color on any element. Addtionally <code class="label">.text-invert</code> can be added to any dark container to invert all the child text elements.
       </p>
     </div>
     <div class="large-8 columns">
@@ -878,7 +938,7 @@ layout: default
     <div class="large-4 columns">
       <h3>Letter Spacing</h3>
       <p>
-        Use these classes to add letter spacing to text. Use <code class="label">.text-letterspacing-<i>index</i></code> to change this on any element.
+        Use these classes to add letter spacing to text. Use <code class="label">.text-letterspacing-<i>[x]</i></code> to change this on any element.
       </p>
     </div>
     <div class="large-8 columns">
@@ -900,7 +960,7 @@ layout: default
     <div class="large-4 columns">
       <h3>Text Weight</h3>
       <p>
-        Use these classes to change the text weight. Use <code class="label">.text-weight-<i>index</i></code> to change this on any element.
+        Use these classes to change the text weight. Use <code class="label">.text-weight-<i>[xxx]</i></code> to change this on any element.
       </p>
     </div>
     <div class="large-8 columns">
@@ -1050,8 +1110,32 @@ layout: default
   <!-- opacity -->
   <div class="row">
     <div class="large-4 columns">
+      <h3>Borders</h3>
+      <p>
+        Use these classes to apply borders to any element. Addtionally <code class="label">.border-color-[color]</code> can be used to change the border color to any color in the pallete.
+      </p>
+    </div>
+    <div class="large-8 columns">
+      <p>
+        Borders can be applied using the following classes:<br/>
+        <span class="border-solid">.border-solid</span> <br/>
+        <span class="border-dashed">.border-dashed</span> <br/>
+        <span class="border-dotted">.border-dotted</span> <br/>
+        <span class="border-solid-top">.border-solid-top</span> <br/>
+        <span class="border-solid-right">.border-solid-right</span> <br/>
+        <span class="border-solid-bottom">.border-solid-bottom</span> <br/>
+        <span class="border-solid-left">.border-solid-left</span> <br/>
+        <span class="border-solid border-color-alert">.border-solid .border-color-alert</span> <br/>
+      </p>
+    </div>
+  </div>
+  <hr class="opacity-4"/>
+
+  <!-- opacity -->
+  <div class="row">
+    <div class="large-4 columns">
       <h3>Opacity</h3>
-      <p>Use opacity classes from <code class="label">.opacity-0</code> to <code class="label">.opacity-4</code> to adjust transparency.</p>
+      <p>Use opacity classes from <code class="label">.opacity-0</code> to <code class="label">.opacity-4</code> to adjust transparency. Additionaly <code class="label">.opacity-full</code> can be used to set a opacity level of 100%.</p>
     </div>
     <div class="large-8 columns">
       <p>
@@ -1061,6 +1145,7 @@ layout: default
         <span class="opacity-2">.opacity-2</span>
         <span class="opacity-3">.opacity-3</span>
         <span class="opacity-4">.opacity-4</span>
+        <span class="opacity-full">.opacity-full</span>
       </p>
     </div>
   </div>
@@ -1070,7 +1155,6 @@ layout: default
   <div class="row">
     <div class="large-4 columns">
       <h3>Center</h3>
-      <code class="label">.center-block</code><br/>
       <p>Use <code class="label">.center-block</code> to center block elements with definded widths.</p>
     </div>
     <div class="large-8 columns">

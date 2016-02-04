@@ -4,8 +4,7 @@
   "author": "Thomas Kimura <thomas@kimuradigital.com>",
   "keywords": [
     "template",
-    "static stie",
-    "jekyll template"
+    "styleguide"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -16,9 +15,6 @@
     "gulp-load-plugins": "^1.2.0",
     "gulp-minify-css": "^1.2.3",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.1",
-    "gulp-shell": "^0.5.2",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-styledown": "0.0.2"
+    "gulp-sass": "^2.2.0"
   }
 }

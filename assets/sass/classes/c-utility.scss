@@ -44,6 +44,7 @@
   @include tablet-down;
 }
 
+
 //================================================//
 // OVERFLOW
 .overflow-hidden {
@@ -109,4 +110,11 @@
 // SHADOWS
 .shadow-bottom {
   @include shadow-bottom;
+}
+
+
+//================================================//
+// MAX WIDTH
+.max-width-none {
+  max-width: none;
 }

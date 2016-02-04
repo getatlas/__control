@@ -18,24 +18,27 @@
 .pulse {
   @include pulse;
 }
-.slideup {
-  @include slideup;
+.slide-up {
+  @include slide-up;
 }
-.slideleft {
-  @include slideleft;
+.slide-left {
+  @include slide-left;
 }
-.slideright {
-  @include slideright;
+.slide-right {
+  @include slide-right;
 }
-.tossleft {
-  @include tossleft;
+.toss-left {
+  @include toss-left;
 }
-.tossright {
-  @include tossright;
+.toss-right {
+  @include toss-right;
 }
 
 //================================================//
 // TRANSTITION CLASSES
 .fade {
   @include fade;
+}
+.fade-out {
+  @include fade-out;
 }
