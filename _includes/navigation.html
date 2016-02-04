@@ -1,6 +1,6 @@
 <header>
 
-  <nav class="padding-tb1 color-bg-midnight text-invert zindex-100 position-fixed full tablet-down">
+  <nav class="padding-tb1 position-fixed color-bg-midnight text-invert zindex-100 full tablet-down">
     <div class="row">
       <div class="small-6 columns">
         <strong>ATLAS</strong>
@@ -76,14 +76,19 @@
   </ul>
 </div>
 
-<nav class="topbar padding-1 color-bg-midnight text-invert zindex-100 desktop-only">
+<div class="topbar padding-1 full position-fixed color-bg-midnight text-invert zindex-100 desktop-only">
   <div class="row max-width-none">
     <div class="small-6 columns">
       <i class="fa fa-search opacity-3"></i> <input class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search...">
     </div>
-    <div class="small-6 columns text-right">
-      <a class="margin-lr1 padding-05 text-midnight hover-color-tint-light-1 rounded"><i class="fa fa-user"></i> Profile</a>
-      <a class="margin-lr1 padding-05 text-midnight hover-color-tint-light-1 rounded"><i class="fa fa-sign-out"></i> Logout</a>
+  </div>
+</div>
+
+<div class="topbar-r padding-1 position-fixed color-bg-midnight text-invert zindex-1000 desktop-only">
+  <div class="row max-width-none">
+    <div class="small-12 columns end float-right text-right">
+      <a class="margin-lr1 padding-05 hover-color-tint-light-1 rounded"><i class="fa fa-user"></i> Profile</a>
+      <a class="margin-lr1 padding-05 hover-color-tint-light-1 rounded"><i class="fa fa-sign-out"></i> Logout</a>
     </div>
   </div>
-</nav>
+</div>

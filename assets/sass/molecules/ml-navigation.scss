@@ -65,7 +65,12 @@
   }
 }
 
-main, .topbar {
+.item-active {
+  @include color-tint-primary-1;
+  box-shadow: -10px 1px 0px -1px $primary inset;
+}
+
+.sidebar-active, .topbar {
   transition: margin 0.2s;
   transition-timing-function: cubic-bezier(.83,.11,.19,.68);
   @media (min-width: 900px) {
@@ -73,14 +78,20 @@ main, .topbar {
   }
 }
 
+.topbar {
+  padding-right: 80px;
+}
+
+.topbar-r {
+  right: 0;
+  width: 55%;
+}
+
 .sidebar:hover + .topbar {
   margin-left: 200px;
 }
 
-.item-active {
-  @include color-tint-primary-1;
-  box-shadow: -10px 1px 0px -1px $primary inset;
-}
+
 
 
 // keyframes used in animations
