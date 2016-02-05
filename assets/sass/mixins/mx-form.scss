@@ -1,0 +1,9 @@
+//================================================//
+// FORMS
+// mixins to style form elements
+//================================================//
+
+
+@mixin input-alert {
+  background: lighten($alert, 15%) !important;
+}
