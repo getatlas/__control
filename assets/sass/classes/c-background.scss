@@ -23,6 +23,10 @@
 .color-bg-dark {@include color-bg-dark;}
 .color-bg-light {@include color-bg-light;}
 
+.input-alert {
+  background: lighten($alert, 30%) !important;
+}
+
 // .color-bg-primary {@include color-bg-primary;}
 // .color-bg-primary-50 {@include color-bg-primary-50;}
 // .color-bg-primary-100 {@include color-bg-primary-100;}

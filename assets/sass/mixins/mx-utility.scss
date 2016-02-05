@@ -12,7 +12,9 @@
 @mixin circular {
   border-radius: 50%;
 }
-
+@mixin unround {
+  border-radius: 0;
+}
 
 //================================================//
 // VISBILITY
