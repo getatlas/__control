@@ -8,7 +8,7 @@ background-color: color-bg-dark
 <main role="main">
   <article>
 
-    <div class="padding-t2">
+    <div class="padding-t2" id="slide-up">
 
       <div class="row">
         <div class="large-6 medium-8 small-11 columns small-centered">
@@ -42,13 +42,13 @@ background-color: color-bg-dark
                     <label for="email" class="padding-1 text-small">Email:</label>
                   </td>
                   <td class="padding-none border-none">
-                    <input id="email" type="text" class="full border-none unround" placeholder="info@atlas.com"></input>
+                    <input autofocus id="email" type="text" class="full border-none unround" placeholder="info@atlas.com"></input>
                   </td>
                 </tr>
 
               </table>
 
-              <p class="margin-none padding-1 color-bg-cream text-center text-small text-alert">Error message. Use a valid email address.</p>
+              <p class="margin-none padding-1 color-bg-cream text-center text-small text-alert" id="error-message">Error message. Use a valid email address.</p>
 
               <p class="margin-none padding-1 color-bg-white text-center text-small">Don't have an account? <a href="#">Sign up</a>.</p>
             </div>

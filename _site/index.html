@@ -134,8 +134,32 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>
-      $( ".nav-toggle" ).click(function() {
-        $("#nav").toggleClass("nav-fullpage-visible");
+      $( document ).ready(function() {
+
+        // navigation toggle
+        $( ".nav-toggle" ).click(function() {
+          $("#nav").toggleClass("nav-fullpage-visible");
+        });
+
+        // animate element into view
+        $("#slide-up").addClass("slide-up");
+
+        // Check passwords
+        function checkPasswordMatch() {
+          var password = $("#password").val();
+          var passwordConfirm = $("#password-confirm").val();
+
+          if (password != passwordConfirm){
+            $("#error-message").removeClass("display-none");
+            $("#error-message").html("Uh oh, passwords do not match.");
+          }
+          else{
+            $("#error-message").addClass("display-none");
+          }
+        }
+
+        $("#password-confirm").keyup(checkPasswordMatch);
+
       });
     </script>
 

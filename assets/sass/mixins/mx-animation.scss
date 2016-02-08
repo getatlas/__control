@@ -20,7 +20,7 @@
   animation-iteration-count: infinite;
 }
 @mixin slide-up {
-  animation: slide-up 1s;
+  animation: slide-up 0.4s;
 }
 @mixin slide-left {
   animation: slide-left 1s;
@@ -59,7 +59,7 @@
 
 @keyframes slide-up {
   0% {
-    transform: translateY(20px);
+    transform: translateY(300px);
     opacity: 0;
   }
   50% {
