@@ -3,3 +3,27 @@
 // code in here should be split into atoms, molecules
 // or used as classes
 //================================================//
+
+
+.transparent-card{
+  background: transparentize($cream, 0.9) !important;
+  color: white;
+  a {
+    color: white;
+    font-weight: 700;
+  }
+  td {
+    color: white;
+    background: transparentize($cream, 0.95) !important;
+  }
+  input {
+    color: white;
+    background: transparentize($cream, 0.95);
+    &:focus {
+      background: transparentize($cream, 0.9);
+    }
+    &:hover {
+      background: transparentize($cream, 0.85);
+    }
+  }
+}

@@ -26,11 +26,11 @@ background-color: color-bg-dark
           <form>
 
             <!-- card -->
-            <div class="margin-b2 rounded overflow-hidden">
+            <div class="margin-b2 rounded overflow-hidden transparent-card">
               <p class="margin-none padding-1 color-bg-midnight text-white text-center text-big">Access Your Account</p>
 
               <!-- table -->
-              <table class="border-solid-top border-solid-bottom border-color-calm">
+              <table>
                 <colgroup>
                    <col span="1" style="width: 25%;">
                    <col span="1" style="width: 75%;">
@@ -38,7 +38,7 @@ background-color: color-bg-dark
 
                 <!-- row -->
                 <tr class="table-nohover">
-                  <td class="padding-none color-bg-calm border-none">
+                  <td class="padding-none border-none">
                     <label for="email" class="padding-1 text-small">Email:</label>
                   </td>
                   <td class="padding-none border-none">
@@ -47,8 +47,8 @@ background-color: color-bg-dark
                 </tr>
 
                 <!-- row -->
-                <tr class="table-nohover">
-                  <td class="padding-none color-bg-calm border-none">
+                <tr class="table-nohover transparent-row">
+                  <td class="padding-none border-none">
                     <label for="password" class="padding-1 text-small">Password:</label>
                   </td>
                   <td class="padding-none border-none">
@@ -58,14 +58,14 @@ background-color: color-bg-dark
 
               </table>
 
-              <p class="margin-none padding-1 color-bg-cream text-small">
+              <p class="margin-none padding-1 text-small">
                 <input id="remember" type="checkbox" class="border-none unround"></input> <label for="remember">Remember me when I login.</label>
               </p>
 
-              <p class="margin-none padding-1 color-bg-cream text-center text-small text-alert display-none" id="error-message"></p>
+              <p class="margin-none padding-1 text-center text-small text-alert display-none" id="error-message">Error message</p>
 
-              <p class="margin-none padding-1 color-bg-white text-center text-small">Don't have an account? <a href="#">Sign up</a>.</p>
-              
+              <p class="margin-none padding-1 text-center text-small border-solid-top border-color-dark">Don't have an account? <a href="#">Sign up</a>.</p>
+
             </div>
 
             <!-- submit -->
