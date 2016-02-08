@@ -7,7 +7,7 @@
 
 .color-bg-white {@include color-bg-white;}
 .color-bg-black {@include color-bg-black;}
-.color-bg-none  {background: none !important;}
+.color-bg-none {@include color-bg-none;}
 
 // brand colours
 .color-bg-primary {@include color-bg-primary;}
@@ -22,10 +22,6 @@
 .color-bg-warning {@include color-bg-warning;}
 .color-bg-dark {@include color-bg-dark;}
 .color-bg-light {@include color-bg-light;}
-
-.input-alert {
-  background: lighten($alert, 30%) !important;
-}
 
 // .color-bg-primary {@include color-bg-primary;}
 // .color-bg-primary-50 {@include color-bg-primary-50;}
