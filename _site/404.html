@@ -1,27 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="">
-    <meta name="application-name" content="">
-
-    <!-- title -->
-    <title></title>
-
-    <!-- description -->
-    <meta name="description" content="" />
-
-    <!-- stylesheets -->
-    <link href="assets/css/style.min.css" rel="stylesheet">
-  </head>
-
-<body class="color-bg-dark">
-
-  <main role="main">
+<main role="main">
   <article>
 
     <div class="padding-t2">
@@ -53,41 +30,3 @@
 
   </article>
 </main>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script>
-      $( document ).ready(function() {
-
-        // navigation toggle
-        $( ".nav-toggle" ).click(function() {
-          $("#nav").toggleClass("nav-fullpage-visible");
-        });
-
-        // animate element into view
-        $("#slide-up").addClass("slide-up");
-
-        // animate element into view
-        $("#fade-out").addClass("fade-out");
-
-        // Check passwords
-        function checkPasswordMatch() {
-          var password = $("#password").val();
-          var passwordConfirm = $("#password-confirm").val();
-
-          if (password != passwordConfirm){
-            $("#error-message").removeClass("display-none");
-            $("#error-message").html("Uh oh, passwords do not match.");
-          }
-          else{
-            $("#error-message").addClass("display-none");
-          }
-        }
-
-        $("#password-confirm").keyup(checkPasswordMatch);
-
-      });
-    </script>
-
-  </body>
-</html>
-
