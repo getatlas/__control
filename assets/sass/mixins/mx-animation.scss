@@ -34,18 +34,23 @@
 @mixin toss-right {
   animation: toss-right 1s;
 }
+@mixin fade-in {
+  animation: fade-in 0.2s;
+}
+
 
 //================================================//
 // TRANSTITION CLASSES
 @mixin fade {
   opacity: 1;
-  transition: opacity .5s cubic-bezier(.8,.43,0,.48);
+  transition: opacity 5s cubic-bezier(.8,.43,0,.48);
 }
 
 @mixin fade-out {
   opacity: 0;
   transition: opacity 2s cubic-bezier(.8,.43,0,.48);
 }
+
 
 //================================================//
 // KEYFRAMES
@@ -123,6 +128,21 @@
   }
  100% {
    transform: translateX(0%) rotate(0deg);
+   opacity: 1;
+ }
+}
+
+@keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+ 100% {
+   display: block;
    opacity: 1;
  }
 }

@@ -112,11 +112,17 @@
           $("#nav").toggleClass("nav-fullpage-visible");
         });
 
-        // animate element into view
+        // animate elements
         $("#slide-up").addClass("slide-up");
-
-        // animate element into view
         $("#fade-out").addClass("fade-out");
+
+        $("#password-confirm").keyup(checkPasswordMatch);
+
+        showModal("#orange")
+
+        $(".close-modal").click(function() {
+          closeAllModals();
+        });
 
         // Check passwords
         function checkPasswordMatch() {
@@ -132,7 +138,30 @@
           }
         }
 
-        $("#password-confirm").keyup(checkPasswordMatch);
+
+        // for all clusters in project
+        // execute the showModal function
+        // can we loop through the clusters?
+
+        // below function takes in the id of a link
+        // the link must have attribute of data-modal
+        // which holds the id of the modal
+        function showModal(id) {
+          console.log(id);
+          var modal = "#" +$(id).attr("data-modal");
+          console.log(modal);
+          $(id).click(function() {
+            console.log("clcked");
+            $(modal).addClass("fade-in");
+            $(modal).removeClass("display-none");
+          });
+        }
+
+        function closeAllModals() {
+          $(".modal").removeClass("fade-in");
+          $(".modal").addClass("display-none");
+        }
+
 
       });
     </script>

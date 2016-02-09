@@ -27,3 +27,13 @@
     }
   }
 }
+
+.modal {
+  height: 100%;
+  width: 100%;
+  z-index: 1000;
+  background: transparentize($dark, 0.1);
+  .transparent-card{
+    background: transparentize($dark, 0.2) !important;
+  }
+}

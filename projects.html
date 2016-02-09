@@ -1,0 +1,107 @@
+---
+layout: apppage
+title: Projects | Atlas
+description:
+---
+
+<!-- MODAL -->
+<!-- ............................ -->
+<section class="modal display-none position-fixed" id="orange-modal">
+  <div class="padding-t6">
+
+    <div class="row">
+      <div class="large-6 medium-8 small-11 columns small-centered">
+
+        <!-- form -->
+        <form>
+
+          <!-- card -->
+          <div class="margin-b2 rounded overflow-hidden transparent-card">
+            <p class="margin-none padding-1 color-bg-midnight text-white text-center text-big">Edit Server</p>
+
+            <!-- table -->
+            <table>
+              <colgroup>
+                 <col span="1" style="width: 25%;">
+                 <col span="1" style="width: 75%;">
+              </colgroup>
+
+              <!-- row -->
+              <tr class="table-nohover">
+                <td class="padding-none border-none">
+                  <label for="email" class="padding-1 text-small">Name:</label>
+                </td>
+                <td class="padding-none border-none">
+                  <input autofocus id="email" type="text" class="full border-none unround" placeholder="Server Name"></input>
+                </td>
+              </tr>
+
+              <!-- row -->
+              <tr class="table-nohover">
+                <td class="padding-none border-none">
+                  <label for="password" class="padding-1 text-small">IP Address:</label>
+                </td>
+                <td class="padding-none border-none">
+                  <input id="password" type="password" class="full border-none unround" placeholder="127:12:91:0"></input>
+                </td>
+              </tr>
+
+              <!-- row -->
+              <tr class="table-nohover">
+                <td class="padding-none border-none">
+                  <label for="password-confirm" class="padding-1 text-small">Folder Path:</label>
+                </td>
+                <td class="padding-none border-none">
+                  <input id="password-confirm" type="password" class="full border-none unround" placeholder="/folder/path/"></input>
+                </td>
+              </tr>
+
+            </table>
+
+            <p class="margin-none padding-1 text-center text-small text-alert display-none" id="error-message"></p>
+
+          </div>
+
+          <!-- submit -->
+          <input type="submit" value="Save Changes" class="margin-b1 button-small full color-bg-primary border-color-primary text-light text-weight-700">
+
+          <!-- submit -->
+          <a class="close-modal button-small full color-bg-dark border-solid border-color-dark text-center text-invert text-weight-700 rounded">Cancel</a>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<main role="main" class="sidebar-active">
+  <article class="color-bg-white">
+
+    <div class="padding-t3">
+      <div class="row">
+        <div class="large-11 medium-11 small-12 columns small-centered">
+          <!-- PROJECTS -->
+          <!-- ............................ -->
+          <section>
+
+            <!-- intro -->
+            <div class="row">
+              <div class="large-4 columns">
+                <h3>Projects</h3>
+                <a id="orange" data-modal="orange-modal">Edit Project</a>
+              </div>
+
+
+
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </article>
+</main>

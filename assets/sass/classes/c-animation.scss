@@ -33,6 +33,10 @@
 .toss-right {
   @include toss-right;
 }
+.fade-in {
+  @include fade-in;
+}
+
 
 //================================================//
 // TRANSTITION CLASSES
