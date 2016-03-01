@@ -123,7 +123,7 @@
 
     <div class="padding-t3">
       <div class="row">
-        <div class="large-11 medium-11 small-12 columns small-centered">
+        <div class="large-12 medium-12 small-12 columns small-centered">
           <!-- INTRO -->
 <!-- ............................ -->
 <section>
@@ -1565,8 +1565,14 @@
 </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.pin.min.js"></script>
+
     <script>
       $( document ).ready(function() {
+
+        $(".pinned").pin({
+          minWidth: 640
+        })
 
         // navigation toggle
         $( ".nav-toggle" ).click(function() {

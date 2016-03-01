@@ -100,8 +100,14 @@
 </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.pin.min.js"></script>
+
     <script>
       $( document ).ready(function() {
+
+        $(".pinned").pin({
+          minWidth: 640
+        })
 
         // navigation toggle
         $( ".nav-toggle" ).click(function() {

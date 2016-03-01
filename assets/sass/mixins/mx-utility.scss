@@ -24,6 +24,9 @@
 @mixin display-inline {
   display: inline;
 }
+@mixin display-inline-block {
+  display: inline-block;
+}
 @mixin display-block {
   display: block;
 }

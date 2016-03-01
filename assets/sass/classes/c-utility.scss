@@ -25,6 +25,9 @@
 .display-inline {
   @include display-inline;
 }
+.display-inline-block {
+  @include display-inline-block;
+}
 .display-block {
   @include display-block;
 }
