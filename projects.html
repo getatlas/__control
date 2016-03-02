@@ -17,7 +17,7 @@ description:
 
           <!-- card -->
           <div class="margin-b2 rounded overflow-hidden transparent-card">
-            <p class="margin-none padding-1 color-bg-midnight text-white text-center text-big">Edit Server</p>
+            <p class="margin-none padding-1 color-bg-midnight text-white text-center text-big">Settings Server</p>
 
             <!-- table -->
             <table>
@@ -92,19 +92,35 @@ description:
               <div class="large-5 medium-5 columns">
                 <div class="margin-t5 pinned text-center">
 
-                  <span class="display-inline-block thumbnail text-weight-600 text-center color-bg-calm rounded text-primary">PR</span>
+                  <span class="display-inline-block thumbnail text-weight-600 text-center color-bg-calm rounded text-primary">P</span>
                   <h2 class="margin-none-b margin-t1 text-center">Project Title</h2>
 
                   <!-- details -->
                   <div class="margin-b3 padding-05 rounded">
                   <!-- row -->
                   <div class="row padding-tb05 collapse border-solid-top border-color-cream text-center">
-                    <p class="margin-none text-bigger">
-                      HH:MM:SS
-                    </p>
-                    <p class="margin-none">
-                      current deployment
-                    </p>
+                    <div class="row text-bigger">
+                      <div class="small-4 columns">
+                        HH
+                      </div>
+                      <div class="small-4 columns">
+                        MM
+                      </div>
+                      <div class="small-4 columns">
+                        SS
+                      </div>
+                    </div>
+                    <div class="row text-small">
+                      <div class="small-4 columns">
+                        HOURS
+                      </div>
+                      <div class="small-4 columns">
+                        MINUTES
+                      </div>
+                      <div class="small-4 columns">
+                        SECONDS
+                      </div>
+                    </div>
                   </div>
                   <!-- row -->
                   <div class="row padding-tb05 collapse border-solid-top border-color-cream text-center">
@@ -113,7 +129,7 @@ description:
                         2
                       </p>
                       <p class="margin-none text-small opacity-1">
-                        Daily
+                        DAILY
                       </p>
                     </div>
                     <div class="small-4 columns">
@@ -121,7 +137,7 @@ description:
                         6
                       </p>
                       <p class="margin-none text-small opacity-1">
-                        Weekly
+                        WEEKLY
                       </p>
                     </div>
                     <div class="small-4 columns">
@@ -129,7 +145,7 @@ description:
                         22
                       </p>
                       <p class="margin-none text-small opacity-1">
-                        Monthly
+                        MONTHLY
                       </p>
                     </div>
                   </div>
@@ -153,50 +169,18 @@ description:
               <div class="large-7 medium-7 margin-t5 columns">
 
                 <!-- <p class="margin-none-t">
-                  <a id="orange" data-modal="orange-modal">Edit Project</a>
+                  <a id="orange" data-modal="orange-modal">Settings Project</a>
                 </p> -->
 
                 <!-- cluster -->
                 <div class="margin-b2 border-solid border-color-calm rounded">
                   <!-- row -->
                   <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-10 columns">
-                      <h6 class="margin-none overflow-ellipsis">Name of a cluster</h6>
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
                     </div>
-                    <div class="small-2 columns text-right">
-                      <h6 class="margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 float-right"></i></h6>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-calm rounded">
-                  <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-10 columns">
-                      <h6 class="margin-none overflow-ellipsis">Name of a cluster</h6>
-                    </div>
-                    <div class="small-2 columns text-right">
-                      <h6 class="margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 float-right"></i></h6>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
                     </div>
                   </div>
                   <!-- row -->
@@ -224,43 +208,11 @@ description:
                 <div class="margin-b2 border-solid border-color-calm rounded">
                   <!-- row -->
                   <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-10 columns">
-                      <h6 class="margin-none overflow-ellipsis">Name of a cluster</h6>
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
                     </div>
-                    <div class="small-2 columns text-right">
-                      <h6 class="margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 float-right"></i></h6>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-calm rounded">
-                  <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-10 columns">
-                      <h6 class="margin-none overflow-ellipsis">Name of a cluster</h6>
-                    </div>
-                    <div class="small-2 columns text-right">
-                      <h6 class="margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 float-right"></i></h6>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
                     </div>
                   </div>
                   <!-- row -->
@@ -288,11 +240,11 @@ description:
                 <div class="margin-b2 border-solid border-color-calm rounded">
                   <!-- row -->
                   <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-10 columns">
-                      <h6 class="margin-none overflow-ellipsis">Name of a cluster</h6>
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
                     </div>
-                    <div class="small-2 columns text-right">
-                      <h6 class="margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 float-right"></i></h6>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
                     </div>
                   </div>
                   <!-- row -->
@@ -320,11 +272,11 @@ description:
                 <div class="margin-b2 border-solid border-color-calm rounded">
                   <!-- row -->
                   <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-10 columns">
-                      <h6 class="margin-none overflow-ellipsis">Name of a cluster</h6>
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
                     </div>
-                    <div class="small-2 columns text-right">
-                      <h6 class="margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 float-right"></i></h6>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
                     </div>
                   </div>
                   <!-- row -->
@@ -348,7 +300,71 @@ description:
                   </div>
                 </div>
 
-                <a class="button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded">Load More Clusters</a>
+                <!-- cluster -->
+                <div class="margin-b2 border-solid border-color-calm rounded">
+                  <!-- row -->
+                  <div class="row padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row padding-05 collapse">
+                    <div class="small-6 columns">
+                      Respository
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <i class="fa fa-github"></i> get-atlas
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row padding-05 collapse">
+                    <div class="small-6 columns">
+                      Deploy Branch
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <code class="label">get-atlas</code>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- cluster -->
+                <div class="margin-b2 border-solid border-color-calm rounded">
+                  <!-- row -->
+                  <div class="row padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row padding-05 collapse">
+                    <div class="small-6 columns">
+                      Respository
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <i class="fa fa-github"></i> get-atlas
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row padding-05 collapse">
+                    <div class="small-6 columns">
+                      Deploy Branch
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <code class="label">get-atlas</code>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="margin-b5 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded">Load More Clusters</a>
 
               </div>
 

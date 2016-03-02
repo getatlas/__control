@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/assets/img/favicon/manifest.json">
+    <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- title -->
+    <title></title>
+
+    <!-- description -->
+    <meta name="description" content="" />
+
+    <!-- stylesheets -->
+    <link href="assets/css/style.min.css" rel="stylesheet">
+  </head>
+
+<body class="">
+
+<header>
+
+  <nav class="padding-tb1 position-fixed color-bg-midnight text-invert zindex-100 full tablet-down">
+    <div class="row">
+      <div class="small-6 columns">
+        <strong>ATLAS</strong>
+      </div>
+      <div class="small-6 columns text-right">
+        <i class="fa fa-bars nav-toggle cursor-pointer"></i>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="nav-fullpage color-bg-dark text-invert zindex-10 overflow-hidden tablet-down" id="nav">
+    <div class="row">
+      <div class="small-12 columns">
+        <div class="padding-1">
+          <br />
+        </div>
+        <ul class="margin-none list-none padding-none">
+          <li class="margin-none padding-1 opacity-2 text-small text-transform-uppercase">
+            V 1.0.0
+          </li>
+          <li class="padding-1 hover-color-tint-dark-1 rounded">
+            <i class="fa fa-database opacity-2"></i> Servers
+          </li>
+          <hr class="opacity-4"/>
+          <li class="padding-1 hover-color-tint-dark-1 rounded">
+            <i class="fa fa-folder-open opacity-2"></i> Projects
+          </li>
+          <hr class="opacity-4"/>
+          <li class="padding-1 hover-color-tint-dark-1 rounded">
+            <i class="fa fa-cubes opacity-2"></i> Clusters
+          </li>
+          <hr class="opacity-4"/>
+          <li class="margin-t4 padding-1 opacity-2 text-small text-transform-uppercase">
+            Account
+          </li>
+          <li class="padding-1 hover-color-tint-dark-1 rounded">
+            <i class="fa fa-user opacity-2"></i> Profile
+          </li>
+          <hr class="opacity-4"/>
+          <li class="padding-1 hover-color-tint-dark-1 rounded">
+            <i class="fa fa-cog opacity-2"></i> Settings
+          </li>
+          <hr class="opacity-4"/>
+          <li class="padding-1 hover-color-tint-dark-1 rounded">
+            <i class="fa fa-sign-out opacity-2"></i> Logout
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+<div class="sidebar position-fixed color-bg-dark text-invert desktop-only zindex-100 overflow-hidden">
+  <div class="padding-1 text-invert color-bg-primary text-center">
+    <img class="logo" src="../assets/img/atlas-mark.svg" />
+    <img class="logoend display-none" src="../assets/img/atlas-logotype.svg" />
+  </div>
+  <ul class="margin-none list-none padding-none text-center">
+    <li class="margin-none padding-1 opacity-3 text-small text-transform-uppercase">V 1.0.0</li>
+    <li class="padding-1 hover-color-tint-light-1 item-active">
+      <i class="fa fa-database opacity-2"></i> <span class="hover-show ">Servers</span>
+    </li>
+    <li class="padding-1 hover-color-tint-light-1">
+      <i class="fa fa-folder-open opacity-2"></i> <span class="hover-show ">Projects</span>
+    </li>
+    <li class="padding-1 hover-color-tint-light-1">
+      <i class="fa fa-cubes opacity-2"></i> <span class="hover-show ">Cluster</span>
+    </li>
+    <li class="padding-1 hover-color-tint-light-1">
+      <i class="fa fa-cog opacity-2"></i> <span class="hover-show ">Settings</span>
+    </li>
+  </ul>
+</div>
+
+<div class="topbar padding-1 full position-fixed color-bg-midnight text-invert zindex-100 desktop-only">
+  <div class="row max-width-none">
+    <div class="small-6 columns">
+      <i class="fa fa-search opacity-3"></i> <input class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search...">
+    </div>
+  </div>
+</div>
+
+<div class="topbar-r padding-1 position-fixed color-bg-midnight text-invert zindex-1000 desktop-only">
+  <div class="row max-width-none">
+    <div class="small-12 columns end float-right text-right">
+      <a class="margin-lr1 padding-05 hover-color-tint-light-1 rounded"><i class="fa fa-user"></i> Profile</a>
+      <a class="margin-lr1 padding-05 hover-color-tint-light-1 rounded"><i class="fa fa-sign-out"></i> Logout</a>
+    </div>
+  </div>
+</div>
+
+  <main role="main" class="sidebar-active">
+  <article class="color-bg-white">
+
+    <div class="padding-t3">
+      <div class="row">
+        <div class="large-12 medium-12 small-12 columns small-centered">
+
+          <!-- PROJECTS -->
+          <!-- ............................ -->
+          <section>
+            <div class="row">
+
+              <div class="large-5 medium-5 columns">
+                <div class="margin-t5 pinned">
+
+                  <div class="text-center">
+                    <span class="display-inline-block thumbnail text-weight-600 text-center color-bg-calm rounded text-primary">C</span>
+                  </div>
+                  <h2 class="margin-none-b margin-t1 text-center">Cluster Title</h2>
+
+                  <!-- details -->
+                  <div class="margin-b3 padding-05 rounded">
+
+                    <!-- row -->
+                    <div class="row padding-05 collapse border-solid-top border-color-cream">
+                      <div class="small-6 columns">
+                        Respository
+                      </div>
+                      <div class="small-6 columns text-right">
+                        <i class="fa fa-github"></i> get-atlas
+                      </div>
+                    </div>
+
+                    <!-- row -->
+                    <div class="row padding-05 collapse border-solid-top border-color-cream">
+                      <div class="small-6 columns">
+                        Deploy Branch
+                      </div>
+                      <div class="small-6 columns text-right">
+                        <code class="label">get-atlas</code>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="large-7 medium-7 margin-t5 columns">
+
+                <!-- server settings -->
+                <div class="margin-b2 border-solid border-color-calm rounded">
+                  <!-- row -->
+                  <div class="row padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-database opacity-3 "></i> Server Settings</h6>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row collapse">
+                    <div class="small-3 columns">
+                      <p class="margin-none padding-05">Name:</p>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" class="border-none full unround" placeholder="Server Name"></input>
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row collapse">
+                    <div class="small-3 columns">
+                      <p class="margin-none padding-05">IP Address:</p>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" class="border-none full unround" placeholder="127.0.0.1"></input>
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row collapse">
+                    <div class="small-3 columns">
+                      <p class="margin-none padding-05">Folder Path:</p>
+                    </div>
+                    <div class="small-9 columns">
+                      <input type="text" class="border-none full unround" placeholder="folder/path/"></input>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="margin-b5 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded">Save Settings</a>
+
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+  </article>
+</main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="assets/js/jquery.pin.min.js"></script>
+
+    <script>
+      $( document ).ready(function() {
+
+        $(".pinned").pin({
+          minWidth: 640
+        })
+
+        // navigation toggle
+        $( ".nav-toggle" ).click(function() {
+          $("#nav").toggleClass("nav-fullpage-visible");
+        });
+
+        // animate elements
+        $("#slide-up").addClass("slide-up");
+        $("#fade-out").addClass("fade-out");
+
+        $("#password-confirm").keyup(checkPasswordMatch);
+
+        showModal("#orange")
+
+        $(".close-modal").click(function() {
+          closeAllModals();
+        });
+
+        // Check passwords
+        function checkPasswordMatch() {
+          var password = $("#password").val();
+          var passwordConfirm = $("#password-confirm").val();
+
+          if (password != passwordConfirm){
+            $("#error-message").removeClass("display-none");
+            $("#error-message").html("Uh oh, passwords do not match.");
+          }
+          else{
+            $("#error-message").addClass("display-none");
+          }
+        }
+
+
+        // for all clusters in project
+        // execute the showModal function
+        // can we loop through the clusters?
+
+        // below function takes in the id of a link
+        // the link must have attribute of data-modal
+        // which holds the id of the modal
+        function showModal(id) {
+          console.log(id);
+          var modal = "#" +$(id).attr("data-modal");
+          console.log(modal);
+          $(id).click(function() {
+            console.log("clcked");
+            $(modal).addClass("fade-in");
+            $(modal).removeClass("display-none");
+          });
+        }
+
+        function closeAllModals() {
+          $(".modal").removeClass("fade-in");
+          $(".modal").addClass("display-none");
+        }
+
+
+      });
+    </script>
+
+  </body>
+</html>
+
