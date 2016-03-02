@@ -126,5 +126,5 @@
 //================================================//
 // SHADOW
 @mixin shadow-bottom {
-  box-shadow: 0 1px 5px $dark;
+  box-shadow: 0 0 10px rgba(123, 134, 168, 0.5);
 }
