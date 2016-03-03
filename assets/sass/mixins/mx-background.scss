@@ -52,7 +52,10 @@
   background: $light;
   border-color: $light;
 }
-
+@mixin color-bg-neutral {
+  background: $neutral;
+  border-color: $neutral;
+}
 
 @mixin color-bg-primary-50 {background: $primary-100;}
 @mixin color-bg-primary-100 {background: $primary-100;}
@@ -163,3 +166,14 @@
 @mixin color-bg-light-700 {background: $light-700;}
 @mixin color-bg-light-800 {background: $light-800;}
 @mixin color-bg-light-900 {background: $light-900;}
+
+@mixin color-bg-neutral-50 {background: $neutral-100;}
+@mixin color-bg-neutral-100 {background: $neutral-100;}
+@mixin color-bg-neutral-200 {background: $neutral-200;}
+@mixin color-bg-neutral-300 {background: $neutral-300;}
+@mixin color-bg-neutral-400 {background: $neutral-400;}
+@mixin color-bg-neutral-500 {background: $neutral-500;}
+@mixin color-bg-neutral-600 {background: $neutral-600;}
+@mixin color-bg-neutral-700 {background: $neutral-700;}
+@mixin color-bg-neutral-800 {background: $neutral-800;}
+@mixin color-bg-neutral-900 {background: $neutral-900;}
