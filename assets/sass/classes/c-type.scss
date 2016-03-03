@@ -35,6 +35,7 @@
 .text-warning{ @include text-warning; }
 .text-dark{ @include text-dark; }
 .text-light{ @include text-light; }
+.text-neutral{ color: $neutral; }
 .text-white{ @include text-white; }
 .text-black{ @include text-black; }
 
@@ -158,4 +159,7 @@
 }
 .text-family-serif {
   @include text-family-serif;
+}
+.text-family-monospace {
+  font-family: $font-monospace;
 }

@@ -156,26 +156,36 @@
     <script>
       $( document ).ready(function() {
 
+        // pin elements to top of
+        // container elment
         $(".pinned").pin({
           minWidth: 640
         })
 
-        // navigation toggle
+
+        // mobile navigation slider
         $( ".nav-toggle" ).click(function() {
           $("#nav").toggleClass("nav-fullpage-visible");
         });
+
 
         // animate elements
         $("#slide-up").addClass("slide-up");
         $("#fade-out").addClass("fade-out");
 
+
+        // check if passwords match
         $("#password-confirm").keyup(checkPasswordMatch);
 
-        showModal("#orange")
 
-        $(".close-modal").click(function() {
-          closeAllModals();
-        });
+        // enable acordian dropdown
+        // for the terminal
+        terminalAcordian(4);
+
+
+        //----------
+        // FUNCTIONS
+        //----------
 
         // Check passwords
         function checkPasswordMatch() {
@@ -215,6 +225,30 @@
           $(".modal").addClass("display-none");
         }
 
+        $(".close-modal").click(function() {
+          closeAllModals();
+        });
+
+
+        // terminal acordian
+        // execute this function and pass
+        // the number of acordians in the terminal
+        // as the id
+        function terminalAcordian(id) {
+          for (var i = 1; i <= id; i++) {
+            (function (i) {
+              $("#toggle-"+i).click(function(){
+                $("#expand-"+i).toggleClass("display-block");
+                if ($("#toggle-"+i).find(".terminal-arrow").text() == "↓") {
+                  $("#toggle-"+i).find(".terminal-arrow").html("→");
+                }
+                else {
+                  $("#toggle-"+i).find(".terminal-arrow").html("↓");
+                }
+              });
+            }(i));
+          }
+        }
 
       });
     </script>

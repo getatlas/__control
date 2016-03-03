@@ -6,9 +6,11 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300,400italic);
 @import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
 $font-default: 'Open Sans', sans-serif;
 $font-header: 'Open Sans', sans-serif;
 $font-logo: 'Open Sans', sans-serif;
+$font-monospace: 'Inconsolata', monospace;
 $font-serif: 'Lora', serif;
 
 $size-base-desktop: 1.125em;  // 18px

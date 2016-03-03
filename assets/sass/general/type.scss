@@ -150,3 +150,10 @@ kbd {
   background: $light;
   box-shadow:0 2px 0px $light-600,0 0 0 3px rgba(255, 255, 255, 0.6) inset;
 }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-monospace;
+  font-size: 1em; }
