@@ -3,10 +3,8 @@ table{
   table-layout:fixed;
 }
 table td {
-  @include padding-tb05;
-  @include padding-lr05;
+  @include padding-05;
   vertical-align: middle;
-  border-bottom: solid $size-border-width $calm;
 }
 table tr {
   &:hover {
@@ -24,6 +22,7 @@ table th {
     background: transparent;
   }
 }
+
 .table-noborder td {
   border-bottom: none;
 }
