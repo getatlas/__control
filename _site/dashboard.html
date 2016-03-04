@@ -134,383 +134,408 @@
   </div>
 </div>
 
-  <!-- MODAL -->
-<!-- ............................ -->
-<section class="modal display-none position-fixed" id="orange-modal">
-  <div class="padding-t6">
-
-    <div class="row">
-      <div class="large-6 medium-8 small-11 columns small-centered">
-
-        <!-- form -->
-        <form>
-
-          <!-- card -->
-          <div class="margin-b2 rounded overflow-hidden transparent-card">
-            <p class="margin-none padding-1 color-bg-midnight text-white text-center text-big">Settings Server</p>
-
-            <!-- table -->
-            <table>
-              <colgroup>
-                 <col span="1" style="width: 25%;">
-                 <col span="1" style="width: 75%;">
-              </colgroup>
-
-              <!-- row -->
-              <tr class="table-nohover">
-                <td class="padding-none border-none">
-                  <label for="email" class="padding-1 text-small">Name:</label>
-                </td>
-                <td class="padding-none border-none">
-                  <input autofocus id="email" type="text" class="full border-none unround" placeholder="Server Name"></input>
-                </td>
-              </tr>
-
-              <!-- row -->
-              <tr class="table-nohover">
-                <td class="padding-none border-none">
-                  <label for="password" class="padding-1 text-small">IP Address:</label>
-                </td>
-                <td class="padding-none border-none">
-                  <input id="password" type="password" class="full border-none unround" placeholder="127:12:91:0"></input>
-                </td>
-              </tr>
-
-              <!-- row -->
-              <tr class="table-nohover">
-                <td class="padding-none border-none">
-                  <label for="password-confirm" class="padding-1 text-small">Folder Path:</label>
-                </td>
-                <td class="padding-none border-none">
-                  <input id="password-confirm" type="password" class="full border-none unround" placeholder="/folder/path/"></input>
-                </td>
-              </tr>
-
-            </table>
-
-            <p class="margin-none padding-1 text-center text-small text-alert display-none" id="error-message"></p>
-
-          </div>
-
-          <!-- submit -->
-          <input type="submit" value="Save Changes" class="margin-b1 button-small full color-bg-primary border-color-primary text-light text-weight-700">
-
-          <!-- submit -->
-          <a class="close-modal button-small full color-bg-dark border-solid border-color-dark text-center text-invert text-weight-700 rounded">Cancel</a>
-
-        </form>
-
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<main role="main" class="sidebar-active">
+  <main role="main" class="sidebar-active">
   <article class="color-bg-white">
 
     <!-- breadcrumbs -->
-    <div class="padding-t4 pinned color-bg-cream zindex-10 border-solid-bottom border-color-neutral">
+    <!-- <div class="padding-t4 pinned color-bg-cream zindex-10 border-solid-bottom border-color-neutral">
       <div class="row">
         <div class="large-12 medium-12 small-12 columns small-centered">
           <p class="margin-none padding-05">
-            <a href="">Dashboard</a> > <a href="">Projects</a>
+            <a href="">Dashboard</a>
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="padding-t3">
-      <div class="row">
+    <div class="padding-t6">
+      <div class="row max-width-none">
         <div class="large-12 medium-12 small-12 columns small-centered">
 
-          <!-- PROJECTS -->
+          <!-- DASHBOARD -->
           <!-- ............................ -->
           <section>
-            <div class="row">
+            <div class="row max-width-none">
+              <h2 class="margin-none-t text-center">My Dashboard</h2>
+            </div>
 
-              <div class="large-5 medium-5 columns">
-                <div class="pinned text-center">
+            <div class="row max-width-none">
 
-                  <span class="display-inline-block thumbnail text-weight-600 text-center color-bg-calm rounded text-primary">P</span>
-                  <h2 class="margin-none-b margin-t1 text-center">Project Title</h2>
+              <!-- column -->
+              <div class="large-4 medium-4 columns">
 
-                  <!-- details -->
-                  <div class="margin-b3 padding-05 rounded">
+                <!-- cluster -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
                   <!-- row -->
-                  <div class="row padding-tb05 collapse border-solid-top border-color-cream text-center">
-                    <div class="row text-bigger">
-                      <div class="small-4 columns">
-                        HH
-                      </div>
-                      <div class="small-4 columns">
-                        MM
-                      </div>
-                      <div class="small-4 columns">
-                        SS
-                      </div>
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
                     </div>
-                    <div class="row text-small">
-                      <div class="small-4 columns">
-                        HOURS
-                      </div>
-                      <div class="small-4 columns">
-                        MINUTES
-                      </div>
-                      <div class="small-4 columns">
-                        SECONDS
-                      </div>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
                     </div>
                   </div>
                   <!-- row -->
-                  <div class="row padding-tb05 collapse border-solid-top border-color-cream text-center">
-                    <div class="small-4 columns">
-                      <p class="margin-none">
-                        2
-                      </p>
-                      <p class="margin-none text-small opacity-1">
-                        DAILY
-                      </p>
-                    </div>
-                    <div class="small-4 columns">
-                      <p class="margin-none">
-                        6
-                      </p>
-                      <p class="margin-none text-small opacity-1">
-                        WEEKLY
-                      </p>
-                    </div>
-                    <div class="small-4 columns">
-                      <p class="margin-none">
-                        22
-                      </p>
-                      <p class="margin-none text-small opacity-1">
-                        MONTHLY
-                      </p>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-tb05 collapse border-solid-top border-color-cream text-center">
+                  <div class="row max-width-none padding-05 collapse">
                     <div class="small-6 columns">
-                      <p class="margin-none">
-                        <i class="opacity-2 fa fa-cubes"></i> 12 Clusters
-                      </p>
+                      Respository
                     </div>
+                    <div class="small-6 columns text-right">
+                      <i class="fa fa-github"></i> get-atlas
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
                     <div class="small-6 columns">
-                      <p class="margin-none">
-                        <i class="opacity-2 fa fa-database"></i> 22 Servers
+                      Deploy Branch
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <code class="label">get-atlas</code>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- timer -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-t05 collapse">
+                    <div class="small-4 columns text-biggest text-center">
+                      HH
+                    </div>
+                    <div class="small-4 columns text-biggest text-center">
+                      MM
+                    </div>
+                    <div class="small-4 columns text-biggest text-center">
+                      SS
+                    </div>
+                  </div>
+                  <div class="row max-width-none padding-b05 collapse">
+                    <div class="small-4 columns text-small text-center">
+                      HOURS
+                    </div>
+                    <div class="small-4 columns text-small text-center">
+                      MINUTES
+                    </div>
+                    <div class="small-4 columns text-small text-center">
+                      SECONDS
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                       </p>
                     </div>
                   </div>
-
-                  <a class="margin-tb2 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded">Deploy Now</a>
-
                 </div>
-                </div>
+
               </div>
 
-              <div class="large-7 medium-7 columns">
 
-                <!-- <p class="margin-none-t">
-                  <a id="orange" data-modal="orange-modal">Settings Project</a>
-                </p> -->
+              <!-- column -->
+              <div class="large-4 medium-4 columns">
 
-                <!-- cluster -->
+                <!-- big text -->
                 <div class="margin-b2 border-solid border-color-neutral rounded">
                   <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
                     <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
                     </div>
                     <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+
                     </div>
                   </div>
                   <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-biggest text-center">
+                      467,000,000
                     </div>
                   </div>
                   <hr class="margin-none opacity-4">
                   <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <!-- cluster -->
+                <!-- table -->
                 <div class="margin-b2 border-solid border-color-neutral rounded">
                   <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
                     <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
                     </div>
                     <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+
                     </div>
                   </div>
                   <!-- row -->
-                  <div class="row padding-05 collapse">
+                  <div class="row max-width-none padding-05 collapse">
                     <div class="small-6 columns">
-                      Respository
+                      Project name
                     </div>
                     <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
+                      Deployment status
                     </div>
                   </div>
-                  <hr class="margin-none opacity-4">
+                  <hr class="opacity-4" />
                   <!-- row -->
-                  <div class="row padding-05 collapse">
+                  <div class="row max-width-none padding-05 collapse">
                     <div class="small-6 columns">
-                      Deploy Branch
+                      Project name
                     </div>
                     <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
+                      Deployment status
                     </div>
                   </div>
                 </div>
 
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <p class="text-center"><a href="">Load more</a></p>
 
               </div>
+
+
+              <!-- column -->
+              <div class="large-4 medium-4 columns">
+
+                <!-- text -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                  <hr class="opacity-4" />
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <a class="button-small full color-bg-white border-solid border-color-primary text-center text-weight-700 rounded">Deploy Now</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- timer -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-t05 collapse">
+                    <div class="small-4 columns text-biggest text-center">
+                      00
+                    </div>
+                    <div class="small-4 columns text-biggest text-center">
+                      00
+                    </div>
+                    <div class="small-4 columns text-biggest text-center">
+                      00
+                    </div>
+                  </div>
+                  <div class="row max-width-none padding-b05 collapse">
+                    <div class="small-4 columns text-small text-center">
+                      SUCCESS
+                    </div>
+                    <div class="small-4 columns text-small text-center">
+                      IN-PROGRESS
+                    </div>
+                    <div class="small-4 columns text-small text-center">
+                      FAILED
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="row max-width-none max-width-none">
+
+              <!-- column -->
+              <div class="large-8 medium-8  columns">
+
+                <!-- cluster -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Respository
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <i class="fa fa-github"></i> get-atlas
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Deploy Branch
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <code class="label">get-atlas</code>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- timer -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-t05 collapse">
+                    <div class="small-4 columns text-biggest text-center">
+                      HH
+                    </div>
+                    <div class="small-4 columns text-biggest text-center">
+                      MM
+                    </div>
+                    <div class="small-4 columns text-biggest text-center">
+                      SS
+                    </div>
+                  </div>
+                  <div class="row max-width-none padding-b05 collapse">
+                    <div class="small-4 columns text-small text-center">
+                      HOURS
+                    </div>
+                    <div class="small-4 columns text-small text-center">
+                      MINUTES
+                    </div>
+                    <div class="small-4 columns text-small text-center">
+                      SECONDS
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+              <!-- column -->
+              <div class="large-4 medium-4 columns">
+
+                <!-- big text -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-biggest text-center">
+                      467,000,000
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- table -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Project name
+                    </div>
+                    <div class="small-6 columns text-right">
+                      Deployment status
+                    </div>
+                  </div>
+                  <hr class="opacity-4" />
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Project name
+                    </div>
+                    <div class="small-6 columns text-right">
+                      Deployment status
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
 
             </div>
           </section>
