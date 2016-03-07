@@ -5,6 +5,104 @@
 //================================================//
 
 
+//================================================//
+// LOADING INDICATOR
+.animate-indicator {
+  display: inline-block;
+  height: .5em;
+  width: 0.5em;
+  margin: 0 2px 0 2px;
+  border-radius: 50%;
+}
+.indicator-1{
+  animation: indicator-1 1s;
+  animation-iteration-count: infinite;
+}
+.indicator-2{
+  animation: indicator-2 1s;
+  animation-iteration-count: infinite;
+}
+.indicator-3{
+  animation: indicator-3 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes indicator-1 {
+  0% {
+    transform: translateY(0);
+    @include opacity-full;
+  }
+  50% {
+    transform: translateY(-50%);
+    @include opacity-3;
+  }
+ 100% {
+   transform: translateY(0);
+   @include opacity-full;
+ }
+}
+@keyframes indicator-2 {
+  20% {
+    transform: translateY(0);
+    @include opacity-full;
+  }
+  60% {
+    transform: translateY(-50%);
+    @include opacity-3;
+  }
+  100% {
+   transform: translateY(0);
+   @include opacity-full;
+ }
+}
+@keyframes indicator-3 {
+  40% {
+    transform: translateY(0);
+    @include opacity-full;
+  }
+  70% {
+    transform: translateY(-50%);
+    @include opacity-3;
+  }
+  100% {
+   transform: translateY(0);
+   @include opacity-full;
+ }
+}
+
+.button-success::after {
+  @include opacity-2;
+  font-family: FontAwesome;
+  font-weight: lighter;
+  content: "| \f00c";
+  display: inline-block;
+  position: absolute;
+  padding-left: 5px;
+  padding-top: 1px;
+  vertical-align: middle;
+}
+
+.button-error{
+  cursor: not-allowed;
+  @include opacity-2;
+  &::hover {
+    opacity: 0.6 !important;
+  }
+  &::after {
+    @include opacity-2;
+    font-family: FontAwesome;
+    font-weight: lighter;
+    content: "| \f00d";
+    display: inline-block;
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 1px;
+    vertical-align: middle;
+  }
+}
+a.button-error:hover {
+  opacity: 0.6 !important;
+}
+
 .transparent-card{
   background: transparentize($cream, 0.9) !important;
   color: white;
