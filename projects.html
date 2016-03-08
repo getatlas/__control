@@ -174,13 +174,29 @@ description:
                     </div>
                   </div>
 
-                  <a class="margin-tb2 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded">Deploy Now</a>
+                  <a class="margin-tb2 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded" id="button">Deploy Now</a>
 
-                  <a class="margin-b2 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded"><span class='animate-indicator color-bg-white indicator-1'></span><span class='animate-indicator color-bg-white indicator-2'></span><span class='animate-indicator color-bg-white indicator-3'></span></a>
+                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+                  <script>
+                    // test to cycle through all button
+                    // states to display
+                    $("#button").click(function() {
+                      $("#button").removeClass("button-success");
+                      $("#button").removeClass("button-error");
 
-                  <a class="margin-b2 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded button-success">Deploy Now</a>
+                      $("#button").html("<span class='animate-indicator color-bg-white indicator-1'></span><span class='animate-indicator color-bg-white indicator-2'></span><span class='animate-indicator color-bg-white indicator-3'></span>");
 
-                  <a class="margin-b2 button-small full color-bg-primary border-solid border-color-primary text-center text-invert text-weight-700 rounded button-error">Deploy Now</a>
+                      setTimeout(function(){
+                        $("#button").html("Deploy Now");
+                        $("#button").addClass("button-success");
+                      }, 2000);
+
+                      setTimeout(function(){
+                        $("#button").removeClass("button-success");
+                        $("#button").addClass("button-error");
+                      }, 4000);
+                    });
+                  </script>
 
                 </div>
                 </div>

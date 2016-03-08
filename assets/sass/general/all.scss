@@ -73,35 +73,65 @@
   @include opacity-2;
   font-family: FontAwesome;
   font-weight: lighter;
-  content: "| \f00c";
+  content: "\f00c";
   display: inline-block;
   position: absolute;
-  padding-left: 5px;
+  padding-left: 10px;
   padding-top: 1px;
   vertical-align: middle;
+  animation: button-success 1s;
+  animation-fill-mode: both;
+}
+@keyframes button-success {
+  0% {
+    transform: translateX(-100%);
+    @include opacity-0;
+  }
+  30% {
+    @include opacity-0;
+  }
+ 100% {
+   transform: translateX(0);
+   @include opacity-2;
+ }
 }
 
 .button-error{
   cursor: not-allowed;
   @include opacity-2;
-  &::hover {
-    opacity: 0.6 !important;
-  }
+  transition: opacity .4s ease-in-out;
   &::after {
     @include opacity-2;
     font-family: FontAwesome;
     font-weight: lighter;
-    content: "| \f00d";
+    content: "\f00d";
     display: inline-block;
     position: absolute;
-    padding-left: 5px;
+    padding-left: 10px;
     padding-top: 1px;
     vertical-align: middle;
+    animation: button-success 1s;
+    animation-fill-mode: both;
   }
 }
 a.button-error:hover {
   opacity: 0.6 !important;
+  transition: opacity .4s ease-in-out;
 }
+@keyframes button-error {
+  0% {
+    transform: translateX(-100%);
+    @include opacity-0;
+  }
+  30% {
+    @include opacity-0;
+  }
+ 100% {
+   transform: translateX(0);
+   @include opacity-2;
+ }
+}
+
 
 .transparent-card{
   background: transparentize($cream, 0.9) !important;
