@@ -28,7 +28,7 @@
   display: inline-block;
 }
 @mixin display-block {
-  display: block;
+  display: block !important;
 }
 @mixin display-initial {
   display: initial;

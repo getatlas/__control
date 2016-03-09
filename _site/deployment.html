@@ -117,12 +117,60 @@
   </ul>
 </div>
 
-<div class="topbar padding-1 full position-fixed color-bg-midnight text-invert zindex-100 desktop-only">
+<div class="topbar full position-fixed color-bg-midnight zindex-100 desktop-only">
   <div class="row max-width-none">
-    <div class="small-6 columns">
-      <i class="fa fa-search opacity-3"></i> <input class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search..." id="autocomplete">
+    <div class="small-6 columns padding-1 text-invert">
+      <form autocomplete="off">
+        <i class="fa fa-search opacity-3"></i>
+        <!-- fake fields are a workaround for chrome autofill getting the wrong fields -->
+        <!-- <input style="display:none" type="text" name="fakeusernameremembered"/>
+        <input style="display:none" type="password" name="fakepasswordremembered"/> -->
+
+        <input autocomplete="off" class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search..." id="autocomplete">
+      </form>
     </div>
   </div>
+
+
+  <div class="autocomplete-suggestions">
+    <div class="autocomplete-group">
+      <strong>People</strong>
+    </div>
+    <div class="autocomplete-suggestion">
+      Thomas Kimura
+    </div>
+    <div class="autocomplete-suggestion">
+      Another Person
+    </div>
+    <div class="autocomplete-suggestion">
+      Someone Else
+    </div>
+    <div class="autocomplete-seemore">
+      <small><a href="">See more</a> from people</small>
+    </div>
+    <div class="autocomplete-group autocomplete-group-muted">
+      <strong>Clusters</strong> <small>- None found</small>
+    </div>
+    <div class="autocomplete-group">
+      <strong>Projects</strong>
+    </div>
+    <div class="autocomplete-suggestion">
+      Project Title
+    </div>
+    <div class="autocomplete-suggestion">
+      My Project
+    </div>
+    <div class="autocomplete-suggestion">
+      Your Cool Project
+    </div>
+    <div class="autocomplete-seemore">
+      <small><a href="">See more</a> from projects</small>
+    </div>
+  </div>
+
+  <div class="search-background">
+  </div>
+
 </div>
 
 <div class="topbar-r padding-1 position-fixed color-bg-midnight text-invert zindex-1000 desktop-only">
@@ -439,31 +487,26 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="assets/js/jquery.pin.min.js"></script>
-<script src="assets/js/jquery.autocomplete.min.js"></script>
+<!-- <script src="assets/js/jquery.autocomplete.min.js"></script> -->
 
 <script>
   $( document ).ready(function() {
 
-
-  $(function(){
-    var results = [
-      { value: 'Chicago Blackhawks', data: { category: 'NHL' } },
-      { value: 'Chicago Bulls', data: { category: 'NBA' } },
-      { value: '', data: { category: 'Category title' } }
-    ];
-
-      // setup autocomplete function pulling from results[] array
-      $('#autocomplete').autocomplete({
-        lookup: results,
-        groupBy: 'category',
-        onSelect: function (suggestion) {
-          var thehtml = '<strong>Currency Name:</strong> ' + suggestion.value + ' <br> <strong>Symbol:</strong> ' + suggestion.data;
-          $('#outputcontent').html(thehtml);
-        }
-      });
-
-
+    // display the autocomplete
+    // search results when the search
+    // input has at least one character
+    $( "#autocomplete" ).keyup(function() {
+      var value = $("#autocomplete").val();
+      if (value.length>0) {
+        $(".autocomplete-suggestions").addClass("display-block");
+        $(".topbar").addClass("height-full");
+      }
+      else {
+        $(".topbar").removeClass("height-full");
+        $(".autocomplete-suggestions").removeClass("display-block");
+      }
     });
+
 
     // pin elements to top of
     // container elment

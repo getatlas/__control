@@ -1,30 +1,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="assets/js/jquery.pin.min.js"></script>
-<script src="assets/js/jquery.autocomplete.min.js"></script>
+<!-- <script src="assets/js/jquery.autocomplete.min.js"></script> -->
 
 <script>
   $( document ).ready(function() {
 
-
-  $(function(){
-    var results = [
-      { value: 'Chicago Blackhawks', data: { category: 'NHL' } },
-      { value: 'Chicago Bulls', data: { category: 'NBA' } },
-      { value: '', data: { category: 'Category title' } }
-    ];
-
-      // setup autocomplete function pulling from results[] array
-      $('#autocomplete').autocomplete({
-        lookup: results,
-        groupBy: 'category',
-        onSelect: function (suggestion) {
-          var thehtml = '<strong>Currency Name:</strong> ' + suggestion.value + ' <br> <strong>Symbol:</strong> ' + suggestion.data;
-          $('#outputcontent').html(thehtml);
-        }
-      });
-
-
+    // display the autocomplete
+    // search results when the search
+    // input has at least one character
+    $( "#autocomplete" ).keyup(function() {
+      var value = $("#autocomplete").val();
+      if (value.length>0) {
+        $(".autocomplete-suggestions").addClass("display-block");
+        $(".topbar").addClass("height-full");
+      }
+      else {
+        $(".topbar").removeClass("height-full");
+        $(".autocomplete-suggestions").removeClass("display-block");
+      }
     });
+
 
     // pin elements to top of
     // container elment

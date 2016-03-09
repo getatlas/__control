@@ -7,12 +7,44 @@
 
 //================================================//
 // SEARCH RESULTS
-.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
-.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
-.autocomplete-selected { background: #F0F0F0; }
-.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
-.autocomplete-group { padding: 2px 5px; }
-.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+.autocomplete-suggestions {
+  display: none;
+  min-height: 400px;
+  height: 100%;
+  z-index: 10;
+  top: 65px;
+  width: 100%;
+  overflow: auto;
+  overflow-x: hidden;
+  @include color-bg-white;
+  @include border-solid-bottom;
+  @include border-color-neutral;
+}
+.autocomplete-group, .autocomplete-suggestion {
+  @include padding-lr2;
+  @include padding-tb05;
+}
+.autocomplete-group {
+  @include color-tint-dark-1;
+}
+.autocomplete-group-muted {
+  @include opacity-3;
+}
+.autocomplete-suggestion {
+  white-space: nowrap;
+  overflow: hidden;
+  &:hover {
+    @include color-tint-primary-1;
+  }
+}
+.autocomplete-seemore {
+  @include padding-lr2;
+  @include padding-b05;
+  @include opacity-1;
+}
+.height-full {
+  height: 100%;
+}
 
 
 //================================================//
