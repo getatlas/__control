@@ -6,6 +6,16 @@
 
 
 //================================================//
+// SEARCH RESULTS
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+
+
+//================================================//
 // LOADING INDICATOR
 .animate-indicator {
   display: inline-block;
@@ -73,7 +83,7 @@
   @include opacity-2;
   font-family: FontAwesome;
   font-weight: lighter;
-  content: "\f00c";
+  content: "| \f00c";
   display: inline-block;
   position: absolute;
   padding-left: 10px;
@@ -104,7 +114,7 @@
     @include opacity-2;
     font-family: FontAwesome;
     font-weight: lighter;
-    content: "\f00d";
+    content: "| \f00d";
     display: inline-block;
     position: absolute;
     padding-left: 10px;

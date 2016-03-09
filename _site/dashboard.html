@@ -120,7 +120,7 @@
 <div class="topbar padding-1 full position-fixed color-bg-midnight text-invert zindex-100 desktop-only">
   <div class="row max-width-none">
     <div class="small-6 columns">
-      <i class="fa fa-search opacity-3"></i> <input class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search...">
+      <i class="fa fa-search opacity-3"></i> <input class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search..." id="autocomplete">
     </div>
   </div>
 </div>
@@ -155,12 +155,54 @@
           <!-- DASHBOARD -->
           <!-- ............................ -->
           <section>
+
+
             <div class="row max-width-none">
               <h2 class="margin-none-t text-center">My Dashboard</h2>
             </div>
 
-            <div class="row max-width-none">
 
+            <div class="row max-width-none">
+              <!-- column -->
+              <div class="large-12 medium-12  columns">
+
+                <!-- cluster -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Respository
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <i class="fa fa-github"></i> get-atlas
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Deploy Branch
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <code class="label">get-atlas</code>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="row max-width-none">
               <!-- column -->
               <div class="large-4 medium-4 columns">
 
@@ -195,6 +237,51 @@
                     </div>
                   </div>
                 </div>
+
+              </div>
+
+              <!-- column -->
+              <div class="large-8 medium-8  columns">
+
+                <!-- cluster -->
+                <div class="margin-b2 border-solid border-color-neutral rounded">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
+                    <div class="small-8 columns">
+                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
+                    </div>
+                    <div class="small-4 columns text-right">
+                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
+                    </div>
+                  </div>
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Respository
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <i class="fa fa-github"></i> get-atlas
+                    </div>
+                  </div>
+                  <hr class="margin-none opacity-4">
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-6 columns">
+                      Deploy Branch
+                    </div>
+                    <div class="small-6 columns text-right">
+                      <code class="label">get-atlas</code>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div class="row max-width-none">
+              <!-- column -->
+              <div class="large-4 medium-4 columns">
 
                 <!-- timer -->
                 <div class="margin-b2 border-solid border-color-neutral rounded">
@@ -240,13 +327,7 @@
                   </div>
                 </div>
 
-              </div>
-
-
-              <!-- column -->
-              <div class="large-4 medium-4 columns">
-
-                <!-- big text -->
+                <!-- text -->
                 <div class="margin-b2 border-solid border-color-neutral rounded">
                   <!-- row -->
                   <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
@@ -254,16 +335,8 @@
                       <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
                     </div>
                     <div class="small-4 columns text-right">
-
                     </div>
                   </div>
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse">
-                    <div class="small-12 columns text-biggest text-center">
-                      467,000,000
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
                   <!-- row -->
                   <div class="row max-width-none padding-05 collapse">
                     <div class="small-12 columns text-small">
@@ -271,7 +344,19 @@
                       </p>
                     </div>
                   </div>
+                  <hr class="opacity-4" />
+                  <!-- row -->
+                  <div class="row max-width-none padding-05 collapse">
+                    <div class="small-12 columns text-small">
+                      <a class="button-small full color-bg-white border-solid border-color-primary text-center text-weight-700 rounded">Deploy Now</a>
+                    </div>
+                  </div>
                 </div>
+
+              </div>
+
+              <!-- column -->
+              <div class="large-4 medium-4 columns">
 
                 <!-- table -->
                 <div class="margin-b2 border-solid border-color-neutral rounded">
@@ -301,39 +386,6 @@
                     </div>
                     <div class="small-6 columns text-right">
                       Deployment status
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>
-
-
-              <!-- column -->
-              <div class="large-4 medium-4 columns">
-
-                <!-- text -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse">
-                    <div class="small-12 columns text-small">
-                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                    </div>
-                  </div>
-                  <hr class="opacity-4" />
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse">
-                    <div class="small-12 columns text-small">
-                      <a class="button-small full color-bg-white border-solid border-color-primary text-center text-weight-700 rounded">Deploy Now</a>
                     </div>
                   </div>
                 </div>
@@ -384,93 +436,6 @@
 
               </div>
 
-
-            </div>
-
-            <div class="row max-width-none max-width-none">
-
-              <!-- column -->
-              <div class="large-8 medium-8  columns">
-
-                <!-- cluster -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis"><i class="fa fa-cubes opacity-3 "></i> Name of a cluster</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-                      <a class="text-small">Edit <i class="fa fa-cog opacity-2"></i></a>
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse">
-                    <div class="small-6 columns">
-                      Respository
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <i class="fa fa-github"></i> get-atlas
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse">
-                    <div class="small-6 columns">
-                      Deploy Branch
-                    </div>
-                    <div class="small-6 columns text-right">
-                      <code class="label">get-atlas</code>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- timer -->
-                <div class="margin-b2 border-solid border-color-neutral rounded">
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
-                    <div class="small-8 columns">
-                      <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
-                    </div>
-                    <div class="small-4 columns text-right">
-
-                    </div>
-                  </div>
-                  <!-- row -->
-                  <div class="row max-width-none padding-t05 collapse">
-                    <div class="small-4 columns text-biggest text-center">
-                      HH
-                    </div>
-                    <div class="small-4 columns text-biggest text-center">
-                      MM
-                    </div>
-                    <div class="small-4 columns text-biggest text-center">
-                      SS
-                    </div>
-                  </div>
-                  <div class="row max-width-none padding-b05 collapse">
-                    <div class="small-4 columns text-small text-center">
-                      HOURS
-                    </div>
-                    <div class="small-4 columns text-small text-center">
-                      MINUTES
-                    </div>
-                    <div class="small-4 columns text-small text-center">
-                      SECONDS
-                    </div>
-                  </div>
-                  <hr class="margin-none opacity-4">
-                  <!-- row -->
-                  <div class="row max-width-none padding-05 collapse">
-                    <div class="small-12 columns text-small">
-                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-
-
               <!-- column -->
               <div class="large-4 medium-4 columns">
 
@@ -501,7 +466,7 @@
                   </div>
                 </div>
 
-                <!-- table -->
+                <!-- text -->
                 <div class="margin-b2 border-solid border-color-neutral rounded">
                   <!-- row -->
                   <div class="row max-width-none padding-05 collapse color-tint-dark-1 ">
@@ -509,35 +474,29 @@
                       <h6 class="display-inline margin-none overflow-ellipsis">Card Header</h6>
                     </div>
                     <div class="small-4 columns text-right">
-
                     </div>
                   </div>
                   <!-- row -->
                   <div class="row max-width-none padding-05 collapse">
-                    <div class="small-6 columns">
-                      Project name
-                    </div>
-                    <div class="small-6 columns text-right">
-                      Deployment status
+                    <div class="small-12 columns text-small">
+                      <p class="margin-none">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                      </p>
                     </div>
                   </div>
                   <hr class="opacity-4" />
                   <!-- row -->
                   <div class="row max-width-none padding-05 collapse">
-                    <div class="small-6 columns">
-                      Project name
-                    </div>
-                    <div class="small-6 columns text-right">
-                      Deployment status
+                    <div class="small-12 columns text-small">
+                      <a class="button-small full color-bg-white border-solid border-color-primary text-center text-weight-700 rounded">Deploy Now</a>
                     </div>
                   </div>
                 </div>
 
-
               </div>
 
-
             </div>
+
+
           </section>
 
         </div>
@@ -547,108 +506,130 @@
   </article>
 </main>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="assets/js/jquery.pin.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="assets/js/jquery.pin.min.js"></script>
+<script src="assets/js/jquery.autocomplete.min.js"></script>
 
-    <script>
-      $( document ).ready(function() {
-
-        // pin elements to top of
-        // container elment
-        $(".pinned").pin({
-          minWidth: 640
-        })
+<script>
+  $( document ).ready(function() {
 
 
-        // mobile navigation slider
-        $( ".nav-toggle" ).click(function() {
-          $("#nav").toggleClass("nav-fullpage-visible");
-        });
+  $(function(){
+    var results = [
+      { value: 'Chicago Blackhawks', data: { category: 'NHL' } },
+      { value: 'Chicago Bulls', data: { category: 'NBA' } },
+      { value: '', data: { category: 'Category title' } }
+    ];
 
-
-        // animate elements
-        $("#slide-up").addClass("slide-up");
-        $("#fade-out").addClass("fade-out");
-
-
-        // check if passwords match
-        $("#password-confirm").keyup(checkPasswordMatch);
-
-
-        // enable acordian dropdown
-        // for the terminal
-        terminalAcordian(4);
-
-
-        //----------
-        // FUNCTIONS
-        //----------
-
-        // Check passwords
-        function checkPasswordMatch() {
-          var password = $("#password").val();
-          var passwordConfirm = $("#password-confirm").val();
-
-          if (password != passwordConfirm){
-            $("#error-message").removeClass("display-none");
-            $("#error-message").html("Uh oh, passwords do not match.");
-          }
-          else{
-            $("#error-message").addClass("display-none");
-          }
+      // setup autocomplete function pulling from results[] array
+      $('#autocomplete').autocomplete({
+        lookup: results,
+        groupBy: 'category',
+        onSelect: function (suggestion) {
+          var thehtml = '<strong>Currency Name:</strong> ' + suggestion.value + ' <br> <strong>Symbol:</strong> ' + suggestion.data;
+          $('#outputcontent').html(thehtml);
         }
-
-
-        // for all clusters in project
-        // execute the showModal function
-        // can we loop through the clusters?
-
-        // below function takes in the id of a link
-        // the link must have attribute of data-modal
-        // which holds the id of the modal
-        function showModal(id) {
-          console.log(id);
-          var modal = "#" +$(id).attr("data-modal");
-          console.log(modal);
-          $(id).click(function() {
-            console.log("clcked");
-            $(modal).addClass("fade-in");
-            $(modal).removeClass("display-none");
-          });
-        }
-
-        function closeAllModals() {
-          $(".modal").removeClass("fade-in");
-          $(".modal").addClass("display-none");
-        }
-
-        $(".close-modal").click(function() {
-          closeAllModals();
-        });
-
-
-        // terminal acordian
-        // execute this function and pass
-        // the number of acordians in the terminal
-        // as the id
-        function terminalAcordian(id) {
-          for (var i = 1; i <= id; i++) {
-            (function (i) {
-              $("#toggle-"+i).click(function(){
-                $("#expand-"+i).toggleClass("display-block");
-                if ($("#toggle-"+i).find(".terminal-arrow").text() == "↓") {
-                  $("#toggle-"+i).find(".terminal-arrow").html("→");
-                }
-                else {
-                  $("#toggle-"+i).find(".terminal-arrow").html("↓");
-                }
-              });
-            }(i));
-          }
-        }
-
       });
-    </script>
+
+
+    });
+
+    // pin elements to top of
+    // container elment
+    $(".pinned").pin({
+      minWidth: 640
+    })
+
+
+    // mobile navigation slider
+    $( ".nav-toggle" ).click(function() {
+      $("#nav").toggleClass("nav-fullpage-visible");
+    });
+
+
+    // animate elements
+    $("#slide-up").addClass("slide-up");
+    $("#fade-out").addClass("fade-out");
+
+
+    // check if passwords match
+    $("#password-confirm").keyup(checkPasswordMatch);
+
+
+    // enable acordian dropdown
+    // for the terminal
+    terminalAcordian(4);
+
+
+    //----------
+    // FUNCTIONS
+    //----------
+
+    // Check passwords
+    function checkPasswordMatch() {
+      var password = $("#password").val();
+      var passwordConfirm = $("#password-confirm").val();
+
+      if (password != passwordConfirm){
+        $("#error-message").removeClass("display-none");
+        $("#error-message").html("Uh oh, passwords do not match.");
+      }
+      else{
+        $("#error-message").addClass("display-none");
+      }
+    }
+
+
+    // for all clusters in project
+    // execute the showModal function
+    // can we loop through the clusters?
+
+    // below function takes in the id of a link
+    // the link must have attribute of data-modal
+    // which holds the id of the modal
+    function showModal(id) {
+      console.log(id);
+      var modal = "#" +$(id).attr("data-modal");
+      console.log(modal);
+      $(id).click(function() {
+        console.log("clcked");
+        $(modal).addClass("fade-in");
+        $(modal).removeClass("display-none");
+      });
+    }
+
+    function closeAllModals() {
+      $(".modal").removeClass("fade-in");
+      $(".modal").addClass("display-none");
+    }
+
+    $(".close-modal").click(function() {
+      closeAllModals();
+    });
+
+
+    // terminal acordian
+    // execute this function and pass
+    // the number of acordians in the terminal
+    // as the id
+    function terminalAcordian(id) {
+      for (var i = 1; i <= id; i++) {
+        (function (i) {
+          $("#toggle-"+i).click(function(){
+            $("#expand-"+i).toggleClass("display-block");
+            if ($("#toggle-"+i).find(".terminal-arrow").text() == "↓") {
+              $("#toggle-"+i).find(".terminal-arrow").html("→");
+            }
+            else {
+              $("#toggle-"+i).find(".terminal-arrow").html("↓");
+            }
+          });
+        }(i));
+      }
+    }
+
+  });
+</script>
 
   </body>
 </html>
