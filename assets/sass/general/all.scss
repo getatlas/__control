@@ -24,26 +24,21 @@
   @include padding-lr2;
   @include padding-tb05;
 }
-.autocomplete-group {
-  @include color-tint-dark-1;
-}
 .autocomplete-group-muted {
   @include opacity-3;
 }
 .autocomplete-suggestion {
   white-space: nowrap;
   overflow: hidden;
+  @include cursor-pointer;
   &:hover {
-    @include color-tint-primary-1;
+    @include color-tint-dark-1;
   }
 }
 .autocomplete-seemore {
   @include padding-lr2;
   @include padding-b05;
   @include opacity-1;
-}
-.height-full {
-  height: 100%;
 }
 
 
@@ -219,4 +214,8 @@ a.button-error:hover {
   p, pre , span {
     @include margin-none;
   }
+}
+
+.height-full {
+  height: 100%;
 }
