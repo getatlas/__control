@@ -7,31 +7,9 @@
 
 
 //================================================//
-// GENEARL CLASS
-.animation {
-  @include animation;
-}
-
-
-//================================================//
 // KEYFRAME CLASSES
-.pulse {
-  @include pulse;
-}
 .slide-up {
   @include slide-up;
-}
-.slide-left {
-  @include slide-left;
-}
-.slide-right {
-  @include slide-right;
-}
-.toss-left {
-  @include toss-left;
-}
-.toss-right {
-  @include toss-right;
 }
 .fade-in {
   @include fade-in;
