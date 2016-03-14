@@ -26,7 +26,7 @@
     <meta name="msapplication-TileImage" content="/assets/img/favicon/mstile-144x144.png">
     <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    
+
     <!-- title -->
     <title></title>
 
@@ -41,18 +41,30 @@
 
 <header>
 
+  <!-- mobile bar -->
   <nav class="padding-tb1 position-fixed color-bg-midnight text-invert zindex-100 full tablet-down">
     <div class="row">
       <div class="small-6 columns">
-        <strong>ATLAS</strong>
+        <img class="height-logo" src="../assets/img/atlas-logotypefull.png" />
       </div>
       <div class="small-6 columns text-right">
+        <i class="fa fa-search search-toggle margin-lr2 cursor-pointer"></i>
         <i class="fa fa-bars nav-toggle cursor-pointer"></i>
       </div>
     </div>
   </nav>
 
-  <nav class="nav-fullpage color-bg-dark text-invert zindex-10 overflow-hidden tablet-down" id="nav">
+  <!-- mobile search -->
+  <nav class="padding-tb1 color-bg-dark text-invert full tablet-down mobile-search">
+    <div class="row">
+      <div class="small-12 columns">
+        <input autocomplete="off" class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search..." id="mobile-autocomplete">
+      </div>
+    </div>
+  </nav>
+
+  <!-- dropdown menu -->
+  <nav class="nav-fullpage color-bg-dark text-invert zindex-10 tablet-down" id="nav">
     <div class="row">
       <div class="small-12 columns">
         <div class="padding-1">
@@ -95,6 +107,7 @@
 
 </header>
 
+<!-- sidebar -->
 <div class="sidebar position-fixed color-bg-dark text-invert desktop-only zindex-100 overflow-hidden">
   <div class="padding-1 text-invert color-bg-primary text-center">
     <img class="logo" src="../assets/img/atlas-mark.svg" />
@@ -117,15 +130,12 @@
   </ul>
 </div>
 
-<div class="topbar full position-fixed color-bg-midnight zindex-100 desktop-only">
-  <div class="row max-width-none">
+<!-- desktop tobar -->
+<div class="topbar full position-fixed color-bg-white zindex-100">
+  <div class="row max-width-none color-bg-midnight desktop-only">
     <div class="small-6 columns padding-1 text-invert">
       <form autocomplete="off">
         <i class="fa fa-search opacity-3"></i>
-        <!-- fake fields are a workaround for chrome autofill getting the wrong fields -->
-        <!-- <input style="display:none" type="text" name="fakeusernameremembered"/>
-        <input style="display:none" type="password" name="fakepasswordremembered"/> -->
-
         <input autocomplete="off" class="padding-none border-none color-bg-none hover" type="text" name="search" placeholder="Search..." id="autocomplete">
       </form>
     </div>
@@ -217,8 +227,6 @@
     </div>
   </div>
 
-  <div class="search-background">
-  </div>
 
 </div>
 
@@ -267,7 +275,9 @@
                     <input type="text" class="border-none full unround" placeholder="Search project directory"></input>
                   </div>
                   <div class="small-2 columns">
-                    <input type="submit" value="Search" class="margin-none rounded full color-bg-primary border-none text-center text-invert text-weight-700">
+                    <button type="submit" class="margin-none rounded unround-topleft unround-bottomleft full color-bg-primary border-none text-center text-invert text-weight-700">
+                      <i class="fa fa-search"></i>
+                    </button>
                   </div>
                 </div>
               </form>

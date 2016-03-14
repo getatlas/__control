@@ -15,7 +15,12 @@
 .unround {
   @include unround;
 }
-
+.unround-topleft {
+  border-top-left-radius: 0;
+}
+.unround-bottomleft {
+  border-bottom-left-radius: 0;
+}
 
 //================================================//
 // VISBILITY

@@ -22,6 +22,20 @@
   transform: translateY(0);
 }
 
+.mobile-search {
+  position: fixed;
+  top: 50px;
+  z-index: -100;
+  transform: translateY(-100%);
+  transition: transform 0.4s;
+  transition-timing-function: cubic-bezier(.83,.11,.19,.68);
+}
+.mobile-search-visible {
+  position: fixed;
+  z-index: 10;
+  transform: translateY(0);
+}
+
 
 // sidebar
 //================================================//
@@ -80,6 +94,10 @@
 
 .topbar {
   padding-right: 80px;
+  @media (max-width: 900px) {
+    padding-right: 0;
+    top: 100px;
+  }
 }
 
 .topbar-r {

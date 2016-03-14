@@ -3,7 +3,7 @@ $( document ).ready(function() {
   // display the autocomplete
   // search results when the search
   // input has at least one character
-  $( "#autocomplete" ).keyup(function() {
+  $("#autocomplete").keyup(function() {
     var value = $("#autocomplete").val();
     if (value.length>0) {
       $(".autocomplete-suggestions").addClass("display-block");
@@ -12,6 +12,39 @@ $( document ).ready(function() {
     else {
       $(".topbar").removeClass("height-full");
       $(".autocomplete-suggestions").removeClass("display-block");
+    }
+  });
+
+  // display the mobile autocomplete
+  // search results when the search
+  // input has at least one character
+  $("#mobile-autocomplete").keyup(function() {
+    var value = $("#mobile-autocomplete").val();
+    if (value.length>0) {
+      $(".autocomplete-suggestions").addClass("display-block");
+      $(".topbar").addClass("height-full");
+    }
+    else {
+      $(".topbar").removeClass("height-full");
+      $(".autocomplete-suggestions").removeClass("display-block");
+    }
+  });
+
+
+  // open mobile search
+  $( ".search-toggle" ).click(function() {
+    $("#nav").removeClass("nav-fullpage-visible");
+    $(".mobile-search").toggleClass("mobile-search-visible");
+    $('#mobile-autocomplete').val('');
+    var value = $("#mobile-autocomplete").val();
+    if (value.length>0) {
+      $(".autocomplete-suggestions").addClass("display-block");
+      $(".topbar").addClass("height-full");
+    }
+    else {
+      $(".topbar").removeClass("height-full");
+      $(".autocomplete-suggestions").removeClass("display-block");
+      $("#mobile-autocomplete").blur();
     }
   });
 
@@ -25,6 +58,10 @@ $( document ).ready(function() {
 
   // mobile navigation slider
   $( ".nav-toggle" ).click(function() {
+    $(".topbar").removeClass("height-full");
+    $(".autocomplete-suggestions").removeClass("display-block");
+    $("#mobile-autocomplete").blur();
+    $(".mobile-search").removeClass("mobile-search-visible");
     $("#nav").toggleClass("nav-fullpage-visible");
   });
 
