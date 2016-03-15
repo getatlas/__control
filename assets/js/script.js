@@ -8,8 +8,10 @@ $( document ).ready(function() {
     if (value.length>0) {
       $(".autocomplete-suggestions").addClass("display-block");
       $(".topbar").addClass("height-full");
+      $("body").addClass("overflow-hidden");
     }
     else {
+      $("body").removeClass("overflow-hidden");
       $(".topbar").removeClass("height-full");
       $(".autocomplete-suggestions").removeClass("display-block");
     }
@@ -23,8 +25,10 @@ $( document ).ready(function() {
     if (value.length>0) {
       $(".autocomplete-suggestions").addClass("display-block");
       $(".topbar").addClass("height-full");
+      $("body").addClass("overflow-hidden");
     }
     else {
+      $("body").removeClass("overflow-hidden");
       $(".topbar").removeClass("height-full");
       $(".autocomplete-suggestions").removeClass("display-block");
     }
@@ -40,8 +44,10 @@ $( document ).ready(function() {
     if (value.length>0) {
       $(".autocomplete-suggestions").addClass("display-block");
       $(".topbar").addClass("height-full");
+      $("body").addClass("overflow-hidden");
     }
     else {
+      $("body").removeClass("overflow-hidden");
       $(".topbar").removeClass("height-full");
       $(".autocomplete-suggestions").removeClass("display-block");
       $("#mobile-autocomplete").blur();
