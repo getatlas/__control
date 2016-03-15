@@ -11,12 +11,18 @@
   display: none;
   height: 75%;
   overflow-y: scroll;
+  overflow-x: hidden;
   z-index: 10;
-  top: 65px;
   width: 100%;
   @include color-bg-white;
   @include border-solid-bottom;
   @include border-color-neutral;
+  @media (min-width: 500px) {
+    top: 8px;
+  }
+  @media (min-width: 900px) {
+    top: 0;
+  }
 }
 .autocomplete-group, .autocomplete-suggestion {
   @include padding-lr2;
